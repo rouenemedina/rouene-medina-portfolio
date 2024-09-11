@@ -1,19 +1,8 @@
 import "./Header.scss";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  // const [click, setClick] = useState(false);
-
-  // const handleMenuClick = () => {
-  //     setClick(!click);
-  // };
-
-  // const closeMenu = () => {
-  //     setClick(false);
-  // }
-
-  // const
-
   return (
     <nav className="header">
       <section className="header__title">
@@ -23,6 +12,9 @@ const Header = () => {
             alt="Rouene Medina Portfolio Logo"
             className="header__logo"
           ></img>
+        </Link>
+        <Link to="/home">
+          <h3>ROUENE</h3>
         </Link>
       </section>
     </nav>
