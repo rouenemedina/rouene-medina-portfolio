@@ -6,15 +6,15 @@ const Header = () => {
   return (
     <nav className="header">
       <section className="header__title">
-        <Link to="">
+        <Link to="" className="header__link">
           <img
             src="{import logo}"
             alt="Rouene Medina Portfolio Logo"
             className="header__logo"
           ></img>
         </Link>
-        <Link to="/home">
-          <h3>ROUENE</h3>
+        <Link to="/home" className="header__link">
+          <h2>ROUENE</h2>
         </Link>
       </section>
     </nav>

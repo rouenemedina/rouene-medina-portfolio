@@ -9,16 +9,22 @@ const HomePage = () => {
       <Header />
       <main className="portfolio">
         <section className="portfolio__hero">
-            <img></img>
-            <h1>ROUENE MEDINA</h1>
-            <h2>Full Stack Software Developer</h2>
-            <h3>based in Toronto, Ontario</h3>
+          <img></img>
+          <h1>ROUENE MEDINA</h1>
+          <h2>Full Stack Software Developer</h2>
+          <h3>based in Toronto, Ontario</h3>
         </section>
         <section className="portfolio__about">
-          <h3>We All Have a Story</h3>
+          <article>
+            <h2>We All Have a Story</h2>
+            <h3>Here's mine</h3>
+          </article>
+          <article>
+            <img></img>
+          </article>
         </section>
         <section className="portfolio__skills">
-          <h3>My Skills</h3> 
+          <h3>My Skills</h3>
         </section>
         <section className="portfolio__projects">
           <h3>My Projects</h3>

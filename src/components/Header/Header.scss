@@ -1,0 +1,16 @@
+@use "../../styles/partials/globals" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+
+.header {
+    display: flex;
+
+    &__title {
+        display: flex;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+}
