@@ -14,10 +14,18 @@ const HomePage = () => {
             <h2>Full Stack Software Developer</h2>
             <h3>based in Toronto, Ontario</h3>
         </section>
-        <section className="portfolio__about"></section>
-        <section className="portfolio__skills"></section>
-        <section className="portfolio__projects"></section>
-        <section className="portfolio__socials"></section>
+        <section className="portfolio__about">
+          <h3>We All Have a Story</h3>
+        </section>
+        <section className="portfolio__skills">
+          <h3>My Skills</h3> 
+        </section>
+        <section className="portfolio__projects">
+          <h3>My Projects</h3>
+        </section>
+        <section className="portfolio__socials">
+          <h3>Let's Connect</h3>
+        </section>
       </main>
       <Footer />
     </>
