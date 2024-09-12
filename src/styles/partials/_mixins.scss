@@ -11,3 +11,13 @@
     @content;
   }
 }
+
+@mixin selected-state {
+  width: 100%;
+  max-width: 10.3125rem;
+  color: $StormCloud;
+  padding: 0.5rem 0;
+  background-color: $Midnight;
+  border-bottom: 1px solid $SkyBlue;
+  border-radius: 20px;
+}

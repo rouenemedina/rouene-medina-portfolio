@@ -1,8 +1,28 @@
 import "./Header.scss";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { MdClose, MdOutlineMenu } from "react-icons/md";
+import NavBar from "../NavBar/NavBar";
 
 const Header = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(!isClicked);
+  };
+
+  const closeMenu = () => {
+    setIsClicked(false);
+  };
+
+  const HamburgerMenu = (
+    <MdOutlineMenu className="header__hamburger" onClick={handleClick} />
+  );
+
+  const CloseHamburgerMenu = (
+    <MdClose className="header__hamburger" onClick={closeMenu} />
+  );
+
   return (
     <nav className="header">
       <section className="header__title">
@@ -14,8 +34,10 @@ const Header = () => {
           ></img>
         </Link>
         <Link to="/home" className="header__link">
-          <h2>ROUENE</h2>
+          <h2 className="header__name">ROUENE</h2>
         </Link>
+        {isClicked ? CloseHamburgerMenu : HamburgerMenu}
+        {isClicked ? <NavBar closeMenu={closeMenu} /> : null}
       </section>
     </nav>
   );

@@ -2,3 +2,22 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/typography" as *;
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+
+    &__hero {
+        display: flex;
+        flex-direction: column;
+        background-color: $FreshCream;
+        padding: 1.5rem;
+    }
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        background-color: $CloudWhite;
+        padding: 1.5rem
+    }
+}
