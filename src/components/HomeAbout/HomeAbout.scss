@@ -3,7 +3,9 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/typography" as *;
 
-.portfolio {
+.about {
     display: flex;
     flex-direction: column;
+    background-color: $CloudWhite;
+    padding: 1.5rem;
 }

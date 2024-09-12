@@ -3,7 +3,9 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/typography" as *;
 
-.portfolio {
+.hero {
+    background-color: $FreshCream;
     display: flex;
     flex-direction: column;
+    padding: 1.5rem;
 }
