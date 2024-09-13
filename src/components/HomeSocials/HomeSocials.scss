@@ -4,5 +4,8 @@
 @use "../../styles/partials/typography" as *;
 
 .socials {
+    color: $CloudWhite;
+    background-color: $Midnight;
     display: flex;
+    padding: 1.5rem;
 }
