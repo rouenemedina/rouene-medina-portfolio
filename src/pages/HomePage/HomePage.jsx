@@ -15,8 +15,8 @@ const HomePage = () => {
       <main className="portfolio">
         <HomeHero />
         <HomeAbout />
-        <HomeSkills />
         <HomeProjects />
+        <HomeSkills />
         <HomeSocials />
       </main>
       <Footer />
