@@ -1,6 +1,6 @@
-@use "./mixins" as *;
-@use "./variables" as *;
-@use "./typography" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
 
 body {
   font-family: "SourceCodePro", "Menlo", "Courier New", monospace;

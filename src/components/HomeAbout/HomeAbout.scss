@@ -5,8 +5,26 @@
 
 .about {
     height: 100vh;
+    background-color: $CloudWhite;
     display: flex;
     flex-direction: column;
-    background-color: $CloudWhite;
+    gap: 1rem;
     padding: 1.5rem;
+    overflow: scroll;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    &__story {
+        line-height: 1.5rem;
+    }
 }
