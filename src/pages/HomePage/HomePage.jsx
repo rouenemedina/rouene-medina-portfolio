@@ -13,11 +13,21 @@ const HomePage = () => {
     <>
       <Header />
       <main className="homepage">
-        <HomeHero />
-        <HomeAbout />
-        <HomeProjects />
-        <HomeSkills />
-        <HomeSocials />
+        <section className = "homepage__sections">
+          <HomeHero />
+        </section>
+        <section className = "homepage__sections">
+          <HomeAbout />
+        </section>
+        <section className = "homepage__sections">
+          <HomeProjects />
+        </section>
+        <section className = "homepage__sections">
+          <HomeSkills />
+        </section>
+        <section className = "homepage__sections">
+          <HomeSocials />
+        </section>
       </main>
       <Footer />
     </>

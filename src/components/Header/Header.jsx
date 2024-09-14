@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdClose, MdOutlineMenu } from "react-icons/md";
 import NavBar from "../NavBar/NavBar";
+import logo from "../../assets/logo/Untitled-3.png";
 
 const Header = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -26,15 +27,12 @@ const Header = () => {
   return (
     <nav className="header">
       <section className="header__title">
-        <Link to="" className="header__link">
+        <Link to="/home" className="header__link">
           <img
-            src="{import logo}"
+            src={logo}
             alt="Rouene Medina Portfolio Logo"
             className="header__logo"
           ></img>
-        </Link>
-        <Link to="/home" className="header__link">
-          <h2 className="header__name">ROUENE</h2>
         </Link>
         {isClicked ? CloseHamburgerMenu : HamburgerMenu}
         {isClicked ? <NavBar closeMenu={closeMenu} /> : null}

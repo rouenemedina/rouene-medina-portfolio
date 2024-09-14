@@ -4,6 +4,7 @@
 @use "../../styles/partials/typography" as *;
 
 .about {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: $CloudWhite;
