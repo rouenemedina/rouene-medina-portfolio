@@ -1,13 +1,21 @@
 //375px
 $mobile-min-width: 375px;
-$mobile-max-width: 767px;
+$mobile-max-width: 480px;
+
+//640px
+$largemobile-min-width: 481px;
+$largemobile-max-width: 767px;
 
 //768px
 $tablet-min-width: 768px;
-$tablet-max-width: 1279px;
+$tablet-max-width: 1024px;
+
+//1024px
+$largetablet-min-width: 1025px;
+$largetablet-max-width: 1280px;
 
 //1280px
-$desktop-min-width: 1280px;
+$desktop-min-width: 1281px;
 $desktop-max-width: 1920px;
 
 //colors
@@ -15,6 +23,7 @@ $desktop-max-width: 1920px;
 $CloudWhite: #fefcf6;
 $FreshCream: #f4efe6;
 $Blanket: #f2e0cf;
+$Oat: #c9c3bd;
 $Oak: #a6886d;
 $Terracota: #854628;
 

@@ -1,13 +1,25 @@
 @use "../../styles/partials/variables" as *;
 
+@mixin largemobile {
+  @media (min-width: $largemobile-min-width) and (max-width: $largemobile-max-width) {
+    @content;
+  }
+}
+
 @mixin tablet {
-  @media (min-width: $tablet-min-width) {
+  @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+    @content;
+  }
+}
+
+@mixin largetablet {
+  @media (min-width: $largetablet-min-width) and (max-width: $largetablet-max-width) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: $desktop-min-width) {
+  @media (min-width: $desktop-min-width) and (max-width: $desktop-max-width) {
     @content;
   }
 }
