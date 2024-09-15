@@ -7,9 +7,9 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
     padding: 1.5rem;
-    
 
     &__container {
         display: flex;
@@ -30,7 +30,7 @@
     &__subcard {
         display: flex;
         border: 1px solid $FreshCream;
-        border-radius: 6px;
+        border-radius: 10px;
         justify-content: center;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }

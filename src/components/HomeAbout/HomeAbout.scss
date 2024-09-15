@@ -24,7 +24,30 @@
         gap: 0.8rem;
     }
 
+    &__subdetails {
+        height: calc(100vh - 4rem - 4rem);
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 20.3125rem;
+        justify-content: flex-end;
+        scroll-snap-align: start;
+        margin-right: 1.25rem;
+        gap: 1rem;
+    }
+
     &__story {
         line-height: 1.5rem;
+    }
+
+    &__img {
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 20px;
     }
 }
