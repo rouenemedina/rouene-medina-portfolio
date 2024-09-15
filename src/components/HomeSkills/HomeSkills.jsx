@@ -24,7 +24,7 @@ import trello from "../../assets/icons/devicons/trello-original-wordmark.svg";
 const HomeSkills = () => {
   return (
     <main className="skills">
-      <h3 className="skills__title">My Skills</h3>
+      <h2 className="skills__title">My Skills</h2>
       <section className="skills__container">
         <article className="skills__card">
           <h4 className="skills__subtitle">PROGRAMMING LANGUAGES</h4>
