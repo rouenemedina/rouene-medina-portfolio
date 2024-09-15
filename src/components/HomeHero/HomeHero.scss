@@ -16,6 +16,12 @@
         padding: 2rem 3rem 0 3rem;
     }
 
+    @include desktop {
+        flex-direction: row;
+        align-items: center;
+        padding: 4rem 5rem 0 5rem;
+    }
+
     &__details {
         display: flex;
         flex-direction: column;
@@ -27,16 +33,30 @@
             gap: 1rem;
             flex: 1;
         }
+
+        @include desktop{
+            gap: 1rem;
+            flex: 1;
+        }
     }
 
     &__profile {
         display: flex;
         flex: 1;
+        justify-content: center;
     }
 
     &__img {
         box-sizing: border-box;
         width: 100%;
         height: 100%;
+
+        @include tablet {
+            width: 80%;
+        }
+
+        @include desktop {
+            width: 60%;
+        }
     }
 }
