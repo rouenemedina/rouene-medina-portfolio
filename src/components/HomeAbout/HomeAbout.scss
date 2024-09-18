@@ -12,11 +12,23 @@
     padding: 1.5rem;
     overflow: scroll;
 
+    @include largemobile {
+        padding: 1.5rem;
+    }
+
     @include tablet {
         padding: 3rem;
     }
 
+    @include largetablet {
+        padding: 3rem;
+    }
+
     @include desktop {
+        padding: 5rem;
+    }
+
+    @include largedesktop {
         padding: 5rem;
     }
 

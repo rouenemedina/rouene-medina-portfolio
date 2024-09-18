@@ -4,7 +4,11 @@
 @use "../../styles/partials/typography" as *;
 
 .header {
+    // width: 100%;
     background-color: $CloudWhite;
+    position: sticky;
+    top: 0;
+    // z-index: 10;
     display: flex;
     padding: 0.5rem 1rem;
 
