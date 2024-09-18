@@ -24,6 +24,12 @@
   }
 }
 
+@mixin largedesktop {
+  @media (min-width: $largedesktop-min-width) and (max-width: $largedesktop-max-width) {
+    @content;
+  }
+}
+
 @mixin selected-state {
   width: 100%;
   max-width: 10.3125rem;

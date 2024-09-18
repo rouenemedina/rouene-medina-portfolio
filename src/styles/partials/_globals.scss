@@ -17,23 +17,41 @@ body {
   margin: 0;
 }
 
-//page header
+//page headers
 h1 {
   font-family: "Oswald";
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 2rem;
 
+  @include largemobile {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+  }
+
   @include tablet {
-    font-size: 2.0625rem;
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+  }
+
+  @include largetablet {
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 2.75rem;
   }
 
   @include desktop {
-    font-size: 2.0625rem;
+    font-size: 3.75rem;
     font-weight: 700;
-    line-height: 2.75rem;
+    line-height: 3rem;
+  }
+
+  @include largedesktop {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 3.25rem;
   }
 }
 
@@ -43,14 +61,32 @@ h2 {
   font-weight: 700;
   line-height: 1.25rem;
 
-  @include tablet {
+  @include largemobile {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.5rem;
   }
 
+  @include tablet {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+
+  @include largetablet {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+
   @include desktop {
-    font-size: 1.25rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+
+  @include largedesktop {
+    font-size: 2.25rem;
     font-weight: 700;
     line-height: 1.5rem;
   }
@@ -58,20 +94,38 @@ h2 {
 
 //subheader
 h3 {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   font-weight: 700;
-  line-height: 1.125rem;
+  line-height: 1.25rem;
+
+  @include largemobile {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+  }
 
   @include tablet {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.375rem;
+  }
+
+  @include largetablet {
+    font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.375rem;
   }
 
   @include desktop {
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: 1.375rem;
+    line-height: 1.5625rem;
+  }
+
+  @include largedesktop {
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.5625rem;
   }
 }
 
