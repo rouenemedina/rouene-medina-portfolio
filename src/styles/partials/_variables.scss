@@ -1,25 +1,25 @@
-//375px
+//375px - Mobile
 $mobile-min-width: 375px;
 $mobile-max-width: 480px;
 
-//640px
+//640px - Large Mobile
 $largemobile-min-width: 481px;
 $largemobile-max-width: 767px;
 
-//768px
+//768px - Tablet
 $tablet-min-width: 768px;
-$tablet-max-width: 1024px;
+$tablet-max-width: 1023px;
 
-//1024px
-$largetablet-min-width: 1025px;
-$largetablet-max-width: 1280px;
+//1024px - Largetablet
+$largetablet-min-width: 1024px;
+$largetablet-max-width: 1279px;
 
-//1280px
-$desktop-min-width: 1281px;
-$desktop-max-width: 1440px;
+//1280px - Desktop
+$desktop-min-width: 1280px;
+$desktop-max-width: 1439px;
 
-//1440px
-$largedesktop-min-width: 1441px;
+//1440px - Large Desktop
+$largedesktop-min-width: 1440px;
 $largedesktop-max-width: 1920px;
 
 //colors
