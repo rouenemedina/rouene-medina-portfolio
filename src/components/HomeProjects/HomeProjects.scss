@@ -4,6 +4,8 @@
 @use "../../styles/partials/typography" as *;
 
 .projects {
+  background-color: $Oat; //TODO: remove this color, temporary
+  width: 100%;
   height: 100vh;
   scroll-margin-top: 4rem;
   display: flex;
@@ -11,7 +13,7 @@
   justify-content: center;
   gap: 1rem;
   padding: 1.5rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
 
   @include tablet {
     padding: 3rem;

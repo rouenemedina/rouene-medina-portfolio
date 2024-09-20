@@ -80,12 +80,14 @@
     }
   }
   &__card {
+    height: calc(100vh - 5rem - 5rem);
     box-sizing: border-box;
+    overflow: scroll;
+    scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     flex: 0 0 20.3125rem;
     justify-content: flex-start;
-    scroll-snap-align: start;
     gap: 1.5rem;
     padding: 0 1.5rem;
 
@@ -96,6 +98,7 @@
     }
 
     @include tablet {
+      overflow: none;
       flex-direction: row;
       flex: 0 0 41.875rem;
       align-items: center;
@@ -103,6 +106,7 @@
     }
 
     @include largetablet {
+      overflow: none;
       flex-direction: row;
       flex: 0 0 58rem;
       align-items: center;
@@ -110,6 +114,7 @@
     }
 
     @include desktop {
+      overflow: none;
       flex-direction: row;
       flex: 0 0 70.875rem;
       align-items: center;
