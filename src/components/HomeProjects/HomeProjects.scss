@@ -5,14 +5,14 @@
 
 .projects {
   background-color: $Oat; //TODO: remove this color, temporary
-  padding: 1.5rem;
-  margin-top: 3rem;
-
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  padding: 1.5rem;
+  margin-top: 3rem;
+
 
   &__sections {
     height: 100vh;
