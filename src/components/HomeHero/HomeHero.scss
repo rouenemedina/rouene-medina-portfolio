@@ -54,37 +54,37 @@
         flex: 2;
         justify-content: center;
         gap: 1.5rem;
-        padding: 3rem 1.5rem;
+        padding: 3rem 3rem;
 
         @include largemobile {
             flex: 1;
             gap: 1.75rem;
-            padding: 3rem 1.5rem;
+            padding: 3rem 3rem;
         }
 
         @include tablet{
             flex: 1;
             gap: 2rem;
-            padding: 4rem 3rem;
+            padding: 4rem 4.5rem;
         }
 
         @include largetablet{
             flex: 1;
             gap: 1.75rem;
-            padding: 4rem 3rem;
+            padding: 4rem 4.25rem;
         }
 
         @include desktop{
             flex: 1;
             gap: 2rem;
-            padding: 5rem 5rem;
+            padding: 5rem 6rem;
             justify-content: center;
         }
 
         @include largedesktop{
             flex: 1;
             gap: 2.5rem;
-            padding: 5.5rem 5.5rem;
+            padding: 5.5rem 6.5rem;
             justify-content: center;
         }   
     }
@@ -98,9 +98,10 @@
     }
 
     &__img {
-        box-sizing: border-box;
         width: 100%;
         // height: 100%;
+        box-sizing: border-box;
+        object-fit: cover;
 
         @include largemobile {
             width: 95%;
@@ -116,10 +117,12 @@
 
         @include desktop {
             width: 80%;
+            // height: 90%;
         }
 
         @include largedesktop {
-            width: 75%;
+            width: 71%;
+            // height: 90%;
         }
     }
 }
