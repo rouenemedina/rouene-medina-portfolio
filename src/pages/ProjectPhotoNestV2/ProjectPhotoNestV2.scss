@@ -3,14 +3,15 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/typography" as *;
 
-.projectPhotoNest {
+.projectPhotoNestV2 {
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   scroll-margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  padding: 1.5rem;
 
   @include largemobile {
     padding: 1.5rem;
@@ -30,57 +31,6 @@
 
   @include largedesktop {
     padding: 5rem;
-  }
-  
-  &__title {
-    padding: 0 1.5rem;
-
-    @include largemobile {
-      padding: 0 1.5rem;
-    }
-
-    @include tablet {
-      padding: 0 3rem;
-    }
-
-    @include largetablet {
-      padding: 0 3rem;
-    }
-
-    @include desktop {
-      padding: 0 5rem;
-    }
-
-    @include largedesktop {
-      padding: 0 5rem;
-    }
-  }
-
-  &__container {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 0 1.5rem;
-    overflow: scroll;
-
-    @include largemobile {
-      flex-direction: row;
-      gap: 1.5rem;
-      padding: 0 1.5rem;
-    }
-
-    @include tablet {
-      flex-direction: row;
-      gap: 1.5rem;
-      padding: 0 3rem;
-    }
-
-    @include desktop {
-      flex-direction: row;
-      gap: 2rem;
-      padding: 0 5rem;
-    }
   }
 
   &__card {

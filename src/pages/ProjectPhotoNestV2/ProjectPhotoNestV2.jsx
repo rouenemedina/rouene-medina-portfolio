@@ -1,6 +1,6 @@
 import "./ProjectPhotoNestV2.scss";
 import React from 'react';
-import Buttons from "../Buttons/Buttons";
+import Buttons from "../../components/Buttons/Buttons";
 import photonest from "../../assets/images/PhotoNest.png";
 
 const ProjectPhotoNestV2 = () => {

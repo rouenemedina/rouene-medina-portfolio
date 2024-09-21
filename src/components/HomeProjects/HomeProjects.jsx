@@ -1,19 +1,26 @@
 import "./HomeProjects.scss";
 import React from "react";
-import ProjectPhotoNest from "../ProjectPhotoNest/ProjectPhotoNest";
-import ProjectPhotoNestV2 from "../ProjectPhotoNestV2/ProjectPhotoNestV2";
+import { Link } from "react-router-dom";
 
 const HomeProjects = () => {
   return (
     <main className="projects">
-      <section className="projects__sections">
-        <h2 className="projects__title">My Projects</h2>
+      <section className="projects__title">
+        <h2>MOST RECENT PROJECTS</h2>
       </section>
-      <section className="projects__sections">
-        <ProjectPhotoNest />
-      </section>
-      <section className="projects__sections">
-        <ProjectPhotoNestV2 />
+      <section className="projects__card">
+          <article className="projects__subcard">
+            <h2>01</h2>
+            <Link to="/projectone" className="projects__link">
+              <h2>PhotoNest</h2>
+            </Link>
+          </article>
+          <article className="projects__subcard">
+            <h2>02</h2>
+            <Link to="/projecttwo" className="projects__link">
+              <h2>PhotoNest V2.0</h2>
+            </Link>
+          </article>
       </section>
     </main>
   );

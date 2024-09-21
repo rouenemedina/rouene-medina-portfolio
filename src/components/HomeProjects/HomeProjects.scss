@@ -4,22 +4,36 @@
 @use "../../styles/partials/typography" as *;
 
 .projects {
-  background-color: $Oat; //TODO: remove this color, temporary
+  background-color: $Moss; //TODO: remove this color, temporary
+  width: 100%;
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
-  margin-top: 3rem;
+  // padding-top: 1.5rem;
+  // padding: 1.5rem;
+  // margin-top: 3rem;
 
-
-  &__sections {
-    height: 100vh;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
+  &__title {
+    color: $FreshCream;
+    padding: 1.5rem;
   }
+
+  &__card {
+    background-color: $CloudWhite;
+    padding: 1.5rem;
+  }
+
+  &__subcard {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid $ForestGreen;
+  }
+
+  &__link {
+    color: $Midnight;
+    text-decoration: none;
+  }
+
 }

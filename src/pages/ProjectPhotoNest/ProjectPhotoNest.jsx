@@ -1,11 +1,11 @@
 import "./ProjectPhotoNest.scss";
 import React from "react";
-import Buttons from "../Buttons/Buttons";
+import Buttons from "../../components/Buttons/Buttons";
 import photonest from "../../assets/images/PhotoNest.png";
 
 const ProjectPhotoNest = () => {
-  return (
-    <main>
+  return ( 
+    <main className="projectPhotoNest">
       <section className="projectPhotoNest__card">
         <article className="projectPhotoNest__subcard">
           <img
@@ -15,7 +15,7 @@ const ProjectPhotoNest = () => {
           ></img>
         </article>
         <article className="projectPhotoNest__details">
-          <h4 className="projectPhotoNest__subtitle">PhotoNest</h4>
+          <h2 className="projectPhotoNest__subtitle">PhotoNest</h2>
           <p className="projectPhotoNest__description">
             A dynamic web application designed to showcase photographer’s
             portfolios, emphasizing robust functionality and visual appeal.
