@@ -1,12 +1,14 @@
 import "./HomeProjects.scss";
 import React from "react";
 import { Link } from "react-router-dom";
+import hero from "../../assets/images/DSC00628-2.jpg";
 
 const HomeProjects = () => {
   return (
     <main className="projects">
-      <section className="projects__title">
-        <h2>MOST RECENT PROJECTS</h2>
+      <section className="projects__hero">
+        <img src={hero} alt="" className="projects__img"></img>
+        <h2 className="projects__title">MOST RECENT PROJECTS</h2>
       </section>
       <section className="projects__card">
           <article className="projects__subcard">

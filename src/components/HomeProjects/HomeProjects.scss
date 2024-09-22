@@ -4,23 +4,105 @@
 @use "../../styles/partials/typography" as *;
 
 .projects {
-  background-color: $Moss; //TODO: remove this color, temporary
+  background-color: $CloudWhite;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  // padding-top: 1.5rem;
-  // padding: 1.5rem;
-  // margin-top: 3rem;
+  // margin-top: 1rem;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include largetablet {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  @include largedesktop {
+    flex-direction: row;
+  }
+
+  &__hero {
+    color: $FreshCream;
+    background-color: $Midnight;
+    position: relative;
+
+    @include tablet {
+      flex: 1;
+    }
+
+    @include largetablet {
+      flex: 1;
+    }
+
+    @include desktop {
+      flex: 1;
+    }
+
+    @include largedesktop {
+      flex: 1;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    opacity: 0.7;
+    object-fit: cover;
+  }
 
   &__title {
-    color: $FreshCream;
-    padding: 1.5rem;
+    // font-size: 2rem;
+    line-height: 2rem;;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+    display: flex;
+
+    @include tablet {
+      left: 4.5rem;
+    }
+
+    @include largetablet {
+      left: 4.25rem;
+    }
+
+    @include desktop {
+      left: 6.25rem;
+    }
+
+    @include largedesktop {
+      left: 6.5rem;
+    }
   }
 
   &__card {
     background-color: $CloudWhite;
-    padding: 1.5rem;
+    padding: 2rem 3rem;
+
+    // @include tablet {
+    //   flex: 1;
+    // }
+
+    @include largetablet {
+      flex: 1;
+    }
+
+    @include desktop {
+      flex: 1;
+    }
+
+    @include largedesktop {
+      flex: 1;
+    }
   }
 
   &__subcard {
@@ -35,5 +117,4 @@
     color: $Midnight;
     text-decoration: none;
   }
-
 }
