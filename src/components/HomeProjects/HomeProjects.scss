@@ -94,14 +94,17 @@
 
     @include largetablet {
       flex: 1;
+      padding: 2rem 3rem;
     }
 
     @include desktop {
       flex: 1;
+      padding: 2rem 5rem;
     }
 
     @include largedesktop {
       flex: 1;
+      padding: 2rem 5rem;
     }
   }
 

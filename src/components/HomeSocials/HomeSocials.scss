@@ -20,8 +20,12 @@
       padding: 1.5rem;
     }
 
+    @include desktop {
+      padding: 5rem;
+    }
+
     @include largedesktop {
-      padding: 0 6.5rem;
+      padding: 5rem;
     }
   }
 
@@ -116,5 +120,9 @@
   &__link {
     color: $CloudWhite;
     text-decoration: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
