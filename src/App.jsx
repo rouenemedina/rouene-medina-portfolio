@@ -11,8 +11,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LandingPage />}></Route>
-          <Route path="/home" element={<HomePage />}></Route>
+          <Route path="/home" element={<LandingPage />}></Route>
+          <Route path="/" element={<HomePage />}></Route>
           <Route path="/projectone" element={<ProjectPhotoNest />}></Route>
           <Route path="/projecttwo" element={<ProjectPhotoNestV2 />}></Route>
         </Routes>
