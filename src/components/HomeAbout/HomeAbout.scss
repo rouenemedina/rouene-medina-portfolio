@@ -12,7 +12,7 @@
   gap: 1rem;
   padding: 1.5rem;
   margin-top: 3rem;
-  overflow: scroll;
+  overflow: none;
 
   @include largemobile {
     padding: 1.5rem;
@@ -52,6 +52,7 @@
   &__subdetails {
     // height: calc(100vh - 3rem - 3rem);
     height: fit-content;
+    box-sizing: border-box;
     display: flex;
     overflow-x: auto;
     overflow: scroll;
@@ -86,50 +87,52 @@
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
-    flex: 0 0 20.3125rem;
+    flex: 0 0 23.3125rem;
     justify-content: flex-start;
     gap: 1.5rem;
     padding: 0 1.5rem;
 
     @include largemobile {
       flex-direction: column;
-      flex: 0 0 36.875rem;
+      flex: 0 0 39.875rem;
       gap: 2rem;
     }
 
     @include tablet {
-      overflow: none;
+      overflow: hidden;
       flex-direction: row;
-      flex: 0 0 41.875rem;
+      flex: 0 0 47.875rem;
       align-items: center;
       gap: 3rem;
     }
 
     @include largetablet {
-      overflow: none;
+      overflow: hidden;
       flex-direction: row;
-      flex: 0 0 58rem;
+      flex: 0 0 63.875rem;
       align-items: center;
       gap: 4rem;
     }
 
     @include desktop {
-      overflow: none;
+      overflow: hidden;
       flex-direction: row;
-      flex: 0 0 70.875rem;
+      flex: 0 0 79.875rem;
       align-items: center;
       gap: 5rem;
     }
 
     @include largedesktop {
+      overflow: hidden;
       flex-direction: row;
-      flex: 0 0 97rem;
+      flex: 0 0 89.875rem;
       align-items: center;
       gap: 6rem;
     }
   }
 
   &__story {
+    width: 100%;
     line-height: 1.5rem;
   }
 
