@@ -4,7 +4,7 @@ import Buttons from "../../components/Buttons/Buttons";
 import photonest from "../../assets/images/PhotoNest.png";
 
 const ProjectPhotoNest = () => {
-  return ( 
+  return (
     <main className="projectPhotoNest">
       <section className="projectPhotoNest__card">
         <article className="projectPhotoNest__subcard">

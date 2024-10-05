@@ -57,38 +57,38 @@ h1 {
 
 //section header
 h2 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.25rem;
 
   @include largemobile {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.5rem;
-  }
-
-  @include tablet {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.5rem;
   }
 
-  @include largetablet {
+  @include tablet {
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 1.5rem;
   }
 
-  @include desktop {
+  @include largetablet {
     font-size: 2rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  @include desktop {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2rem;
   }
 
   @include largedesktop {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.5rem;
+    line-height: 2.25rem;
   }
 }
 

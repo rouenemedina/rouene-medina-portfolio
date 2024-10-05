@@ -14,7 +14,7 @@ const HomeAbout = () => {
       <section className="about__container">
         <article className="about__title">
           <h2 className="about__subtitle">We All Have a Story</h2>
-          <h3 className="about__subtitle">Here's mine</h3>
+          <h3 className="about__subtitle-secondary">Here's mine</h3>
         </article>
         <article className="about__details">
           <div className="about__subdetails">
