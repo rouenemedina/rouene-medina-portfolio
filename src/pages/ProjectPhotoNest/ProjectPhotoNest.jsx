@@ -13,7 +13,7 @@ const ProjectPhotoNest = () => {
           <article className="projectPhotoNest__subcard">
             <img
               src={photonest}
-              alt="PhotoNest Media Queries"
+              alt="PhotoNest in Different Media Queries"
               className="projectPhotoNest__img"
             ></img>
           </article>

@@ -9,7 +9,7 @@ const NavBar = ({ isClicked, closeMenu }) => {
     <main className={navBarClasses}>
       <section className="navBar">
         <NavLink
-          to="/home"
+          to="/"
           className={({ isActive }) =>
             isActive ? "navBar__link navBar__link--active" : "navBar__link"
           }
