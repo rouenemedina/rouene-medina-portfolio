@@ -150,4 +150,9 @@
   &__link {
     @include link;
   }
+
+  &__backicon {
+    width: 100%;
+    height: 2.5rem;
+  }
 }
