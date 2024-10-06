@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <nav className="header">
       <section className="header__title">
-        <Link to="/" className="header__link">
+        <Link to="/home" className="header__link">
           <img
             src={logo}
             alt="Rouene Medina Portfolio Logo"
