@@ -37,6 +37,10 @@
   &__container {
     display: flex;
     flex-direction: column;
+
+    @include largedesktop {
+      padding: 0 6rem;
+    }
   }
 
   &__title {
@@ -53,7 +57,6 @@
   }
 
   &__subdetails {
-    // height: calc(100vh - 3rem - 3rem);
     height: fit-content;
     box-sizing: border-box;
     display: flex;
@@ -63,7 +66,6 @@
     scroll-snap-type: x mandatory;
 
     @include largemobile {
-      // height: calc(100vh - 4rem - 4rem);
       height: fit-content;
     }
 
@@ -128,7 +130,7 @@
     @include largedesktop {
       overflow: hidden;
       flex-direction: row;
-      flex: 0 0 89.875rem;
+      flex: 0 0 94.875rem;
       align-items: center;
       gap: 6rem;
     }

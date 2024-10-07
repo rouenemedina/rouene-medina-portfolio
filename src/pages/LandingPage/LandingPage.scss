@@ -16,7 +16,7 @@
   align-items: center;
 
   &__img {
-    opacity: 0.8;
+    opacity: 0.86;
   }
 
   &__hero {
@@ -31,8 +31,8 @@
   }
 
   &__title {
-    // height: 100%;
     width: 100%;
+    z-index: 1;
     font-family: "ComforterBrush", "cursive";
     font-size: 4rem;
     line-height: 6.5rem;
@@ -98,10 +98,22 @@
         top: 64%;
         left: 51%;
       }
+
+      @include desktop {
+        width: 52%;
+        top: 62%;
+        left: 51%;
+      }
+
+      @include largedesktop {
+        animation-delay: 3s;
+        width: 44%;
+        top: 62%;
+        left: 51%;
+      }
     }
 
     &--pulse {
-      // width: 100%;
       height: 5rem;
       box-sizing: border-box;
       position: absolute;
@@ -127,6 +139,16 @@
         bottom: 18%;
         right: 7%;
       }
+
+      @include desktop {
+        bottom: 18%;
+        right: 7%;
+      }
+
+      @include largedesktop {
+        bottom: 15%;
+        right: 10%;
+      }
     }
 
     &--twinkle {
@@ -145,6 +167,16 @@
       @include largetablet {
         bottom: 6%;
         right: 9%;
+      }
+
+      @include desktop {
+        bottom: 6%;
+        right: 9%;
+      }
+
+      @include largedesktop {
+        bottom: 9%;
+        right: 12%;
       }
     }
 
@@ -170,16 +202,26 @@
         top: 34%;
         right: 21%;
       }
+
+      @include desktop {
+        top: 34%;
+        right: 24%;
+      }
+
+      @include largedesktop {
+        top: 38%;
+        right: 28.75%;
+      } 
     }
   }
 }
 
 @keyframes revealText {
   from {
-    clip-path: inset(0 100% 0 0); /* Text is fully hidden */
+    clip-path: inset(0 100% 0 0);
   }
   to {
-    clip-path: inset(0 0 0 0); /* Text is fully revealed */
+    clip-path: inset(0 0 0 0);
   }
 }
 

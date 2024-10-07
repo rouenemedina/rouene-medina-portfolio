@@ -9,7 +9,6 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  // margin-top: 1rem;
 
   @include tablet {
     flex-direction: row;
@@ -58,8 +57,7 @@
   }
 
   &__title {
-    // font-size: 2rem;
-    line-height: 2rem;;
+    line-height: 2rem;
     box-sizing: border-box;
     position: absolute;
     top: 50%;
@@ -87,10 +85,6 @@
   &__card {
     background-color: $CloudWhite;
     padding: 2rem 3rem;
-
-    // @include tablet {
-    //   flex: 1;
-    // }
 
     @include largetablet {
       flex: 1;

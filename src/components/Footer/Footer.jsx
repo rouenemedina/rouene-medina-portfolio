@@ -14,8 +14,8 @@ const Footer = () => {
           <p>&copy;2024 Rouene Medina</p>
         </article>
         <article className="footer__attributes">
-          <h5>
-            Icons created by {" "}
+          <h5 className="footer__subtitle">
+            Icons created by{" "}
             <a
               href="https://github.com/devicons"
               target="_blank"
@@ -23,6 +23,19 @@ const Footer = () => {
             >
               devicons
             </a>
+          </h5>
+          <h5 className="footer__subtitle">
+            Icons provided by{" "}
+            <a
+              href="https://stock.adobe.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Adobe Stock
+            </a>
+          </h5>
+          <h5 className="footer__subtitle">
+            All photos © Rouene Medina [2024]
           </h5>
         </article>
       </section>
