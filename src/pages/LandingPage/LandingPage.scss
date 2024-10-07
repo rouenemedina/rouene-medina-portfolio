@@ -16,7 +16,7 @@
   align-items: center;
 
   &__img {
-    opacity: 0.6;
+    opacity: 0.8;
   }
 
   &__hero {
@@ -34,7 +34,7 @@
     // height: 100%;
     width: 100%;
     font-family: "ComforterBrush", "cursive";
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 6.5rem;
     text-align: center;
     color: $CloudWhite;
@@ -70,6 +70,108 @@
       line-height: 11rem;
     }
   }
+
+  &__animate {
+    &--underline {
+      width: 80%;
+      height: auto;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      clip-path: inset(0 100% 0 0);
+      animation: revealLine 1s linear 4s forwards;
+
+      @include largemobile {
+        width: 66%;
+        top: 62%;
+      }
+
+      @include tablet {
+        width: 60%;
+        top: 64%;
+        left: 52%;
+      }
+
+      @include largetablet {
+        width: 53%;
+        top: 64%;
+        left: 51%;
+      }
+    }
+
+    &--pulse {
+      // width: 100%;
+      height: 5rem;
+      box-sizing: border-box;
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      animation: pulse 2s infinite;
+    }
+
+    &--slow {
+      height: 2rem;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 31%;
+      right: 3%;
+      animation: twinkle 3s infinite ease-in-out;
+
+      @include tablet {
+        bottom: 18%;
+        right: 7%;
+      }
+
+      @include largetablet {
+        bottom: 18%;
+        right: 7%;
+      }
+    }
+
+    &--twinkle {
+      height: 4rem;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 15%;
+      right: 5%;
+      animation: twinkle 2s infinite ease-in-out;
+
+      @include tablet {
+        bottom: 6%;
+        right: 9%;
+      }
+
+      @include largetablet {
+        bottom: 6%;
+        right: 9%;
+      }
+    }
+
+    &--flicker {
+      height: 4rem;
+      box-sizing: border-box;
+      position: absolute;
+      top: 34%;
+      right: 8%;
+      animation: flicker 1s infinite ease-in-out;
+
+      @include largemobile {
+        top: 30%;
+        right: 13%;
+      }
+
+      @include tablet {
+        top: 30%;
+        right: 16%;
+      }
+
+      @include largetablet {
+        top: 34%;
+        right: 21%;
+      }
+    }
+  }
 }
 
 @keyframes revealText {
@@ -78,5 +180,59 @@
   }
   to {
     clip-path: inset(0 0 0 0); /* Text is fully revealed */
+  }
+}
+
+@keyframes revealLine {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30%,
+  50%,
+  70% {
+    opacity: 0.5;
+  }
+  40%,
+  60%,
+  80% {
+    opacity: 0.9;
   }
 }

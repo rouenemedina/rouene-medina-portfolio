@@ -1,6 +1,6 @@
 import "./HomeHero.scss";
 import React from "react";
-import Profile from "../../assets/images/DSC00821-Edit.png";
+import Profile from "../../assets/images/DSC00804-Edit-4.jpg";
 
 const HomeHero = () => {
   return (

@@ -102,6 +102,7 @@
         // height: 100%;
         box-sizing: border-box;
         object-fit: cover;
+        border-radius: 20px;
 
         @include largemobile {
             width: 95%;
