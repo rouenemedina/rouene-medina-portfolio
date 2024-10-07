@@ -23,7 +23,12 @@ const HomeAbout = () => {
                 Hi, my name is Rouene Medina and I am a full-stack software
                 developer.
               </p>
-              <img src={persona2} alt="Software Developer" className="about__img"></img>
+              <img
+                src={persona2}
+                alt="Software Developer"
+                className="about__img"
+                loading="lazy"
+              ></img>
             </div>
             <div className="about__card">
               <p className="about__story">
@@ -31,14 +36,24 @@ const HomeAbout = () => {
                 led me to explore both project management in construction and
                 design and entrepreneurship in the creative sector.
               </p>
-              <img src={persona1} alt="Civil Engineer" className="about__img"></img>
+              <img
+                src={persona1}
+                alt="Civil Engineer"
+                className="about__img"
+                loading="lazy"
+              ></img>
             </div>
             <div className="about__card">
               <p className="about__story">
                 However, my real passion emerged when I discovered software
                 engineering, particularly front-end and full-stack development.
               </p>
-              <img src={codes} alt="Software Developer Coding" className="about__img"></img>
+              <img
+                src={codes}
+                alt="Software Developer Coding"
+                className="about__img"
+                loading="lazy"
+              ></img>
             </div>
             <div className="about__card">
               <p className="about__story">
@@ -47,7 +62,7 @@ const HomeAbout = () => {
                 chance to create visually appealing, user-friendly digital
                 experiences that are not only functional but impactful.
               </p>
-              <img src={ui} alt="" className="about__img"></img>
+              <img src={ui} alt="" className="about__img" loading="lazy"></img>
             </div>
             <div className="about__card">
               <p className="about__story">
@@ -56,7 +71,12 @@ const HomeAbout = () => {
                 engineering bootcamp, I gained hands-on experience with
                 technologies like HTML, CSS, JavaScript, TypeScript, and React.
               </p>
-              <img src={diploma} alt="" className="about__img"></img>
+              <img
+                src={diploma}
+                alt=""
+                className="about__img"
+                loading="lazy"
+              ></img>
             </div>
             <div className="about__card">
               <p className="about__story">
@@ -67,7 +87,12 @@ const HomeAbout = () => {
                 essential in my development process, while Figma and Adobe
                 Creative Suite support my design work.
               </p>
-              <img src={media} alt="" className="about__img"></img>
+              <img
+                src={media}
+                alt=""
+                className="about__img"
+                loading="lazy"
+              ></img>
             </div>
             <div className="about__card">
               <p className="about__story">
@@ -76,7 +101,12 @@ const HomeAbout = () => {
                 to bring ideas to life through code, ensuring that every element
                 not only looks good but also functions seamlessly.
               </p>
-              <img src={persona3} alt="Software Developer" className="about__img"></img>
+              <img
+                src={persona3}
+                alt="Software Developer"
+                className="about__img"
+                loading="lazy"
+              ></img>
             </div>
           </div>
         </article>

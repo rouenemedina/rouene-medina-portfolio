@@ -26,6 +26,7 @@ const HomeSocials = () => {
               src={linkedin}
               alt="Rouene's Linkedin"
               className="socials__img"
+              loading="lazy"
             ></img>
             <h3 className="socials__subtitle">LINKEDIN</h3>
           </a>
@@ -36,11 +37,13 @@ const HomeSocials = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="socials__link"
+            loading="lazy"
           >
             <img
               src={github}
               alt="Rouene's Github"
               className="socials__img"
+              loading="lazy"
             ></img>
             <h3 className="socials__subtitle">GITHUB</h3>
           </a>

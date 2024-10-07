@@ -14,6 +14,7 @@ const LandingPage = () => {
           src={background}
           alt="Background Image"
           className="landing__img"
+          loading="lazy"
         ></img>
         <Link to="/home" className="landing__link">
           <h1 className="landing__title">Rouene Medina</h1>

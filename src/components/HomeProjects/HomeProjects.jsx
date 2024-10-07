@@ -7,7 +7,7 @@ const HomeProjects = () => {
   return (
     <main className="projects">
       <section className="projects__hero">
-        <img src={hero} alt="" className="projects__img"></img>
+        <img src={hero} alt="" className="projects__img" loading="lazy"></img>
         <h2 className="projects__title">MOST RECENT PROJECTS</h2>
       </section>
       <section className="projects__card">

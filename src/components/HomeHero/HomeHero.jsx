@@ -18,6 +18,7 @@ const HomeHero = () => {
             src={Profile}
             alt="Rouene Medina's photo"
             className="hero__img"
+            loading="lazy"
           ></img>
         </section>
       </main>
