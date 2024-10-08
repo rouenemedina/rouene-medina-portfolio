@@ -12,7 +12,7 @@ import knexicon from "../../assets/icons/devicons/knexjs-original-wordmark.svg";
 import mysql from "../../assets/icons/devicons/mysql-original-wordmark.svg";
 import postgresql from "../../assets/icons/devicons/postgresql-original-wordmark.svg";
 import axios from "../../assets/icons/devicons/axios-plain-wordmark.svg";
-import webapi from "../../assets/icons/web-development.png";
+import webapi from "../../assets/icons/flaticon-freepik/web-development.png";
 import postman from "../../assets/icons/devicons/postman-original-wordmark.svg";
 import github from "../../assets/icons/devicons/github-original.svg";
 import visual from "../../assets/icons/devicons/vscode-original.svg";
