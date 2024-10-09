@@ -25,7 +25,7 @@ const HomePage = () => {
         <section className = "homepage__sections">
           <HomeSkills />
         </section>
-        <section className = "homepage__sections">
+        <section className = "homepage__sections" id="contact">
           <HomeSocials />
         </section>
       </main>

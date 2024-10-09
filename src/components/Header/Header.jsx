@@ -34,8 +34,8 @@ const Header = () => {
             className="header__logo"
           ></img>
         </Link>
-        {isClicked ? CloseHamburgerMenu : HamburgerMenu}
-        {isClicked ? <NavBar closeMenu={closeMenu} /> : null}
+        {/* {isClicked ? CloseHamburgerMenu : HamburgerMenu}
+        {isClicked ? <NavBar closeMenu={closeMenu} /> : null} */}
       </section>
     </nav>
   );

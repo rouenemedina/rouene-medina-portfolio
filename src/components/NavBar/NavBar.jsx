@@ -18,7 +18,7 @@ const NavBar = ({ isClicked, closeMenu }) => {
           <h4 className="navBar__title">HOME</h4>
         </NavLink>
         <NavLink
-          to=""
+          to="/home#contact"
           className={({ isActive }) =>
             isActive ? "navBar__link navBar__link--active" : "navBar__link"
           }
