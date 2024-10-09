@@ -12,13 +12,13 @@ const HomeProjects = () => {
       </section>
       <section className="projects__card">
           <article className="projects__subcard">
-            <h2>01</h2>
+            <h3>01</h3>
             <Link to="/projectone" className="projects__link">
               <h3>PhotoNest</h3>
             </Link>
           </article>
           <article className="projects__subcard">
-            <h2>02</h2>
+            <h3>02</h3>
             <Link to="/projecttwo" className="projects__link">
               <h3>PhotoNest V2.0</h3>
             </Link>
