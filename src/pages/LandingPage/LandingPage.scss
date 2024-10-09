@@ -47,7 +47,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @include largemobile {
+    @include phablet {
       font-size: 6rem;
       line-height: 7rem;
     }
@@ -57,7 +57,7 @@
       line-height: 8rem;
     }
 
-    @include largetablet {
+    @include laptop {
       font-size: 8rem;
       line-height: 9rem;
     }
@@ -67,17 +67,17 @@
       line-height: 10rem;
     }
 
-    @include largedesktop {
+    @include wide {
       font-size: 10rem;
       line-height: 11rem;
     }
 
-    @include extralargedesktop {
+    @include ultrahd {
       font-size: 11rem;
       line-height: 12rem;
     }
 
-    @include extraextralargedesktop {
+    @include retina {
       font-size: 12rem;
       line-height: 13rem;
     }
@@ -94,7 +94,7 @@
       clip-path: inset(0 100% 0 0);
       animation: revealLine 1s linear 4s forwards;
 
-      @include largemobile {
+      @include phablet {
         width: 66%;
         top: 62%;
       }
@@ -105,7 +105,7 @@
         left: 51%;
       }
 
-      @include largetablet {
+      @include laptop {
         width: 54%;
         top: 64%;
         left: 51%;
@@ -117,21 +117,21 @@
         left: 50.5%;
       }
 
-      @include largedesktop {
+      @include wide {
         animation-delay: 3s;
         width: 48%;
         top: 68%;
         left: 50.5%;
       }
 
-      @include extralargedesktop {
+      @include ultrahd {
         animation-delay: 3.5s;
         width: 48%;
         top: 70%;
         left: 51%;
       }
 
-      @include extraextralargedesktop {
+      @include retina {
         animation-delay: 3.5s;
         width: 47%;
         top: 72%;
@@ -161,7 +161,7 @@
         right: 7%;
       }
 
-      @include largetablet {
+      @include laptop {
         bottom: 18%;
         right: 7%;
       }
@@ -171,7 +171,7 @@
         right: 7%;
       }
 
-      @include largedesktop {
+      @include wide {
         bottom: 15%;
         right: 10%;
       }
@@ -190,7 +190,7 @@
         right: 9%;
       }
 
-      @include largetablet {
+      @include laptop {
         bottom: 6%;
         right: 9%;
       }
@@ -200,7 +200,7 @@
         right: 9%;
       }
 
-      @include largedesktop {
+      @include wide {
         bottom: 9%;
         right: 12%;
       }
@@ -214,7 +214,7 @@
       right: 8%;
       animation: flicker 1s infinite ease-in-out;
 
-      @include largemobile {
+      @include phablet {
         top: 30%;
         right: 13%;
       }
@@ -224,7 +224,7 @@
         right: 16%;
       }
 
-      @include largetablet {
+      @include laptop {
         top: 34%;
         right: 21%;
       }
@@ -234,17 +234,17 @@
         right: 24%;
       }
 
-      @include largedesktop {
+      @include wide {
         top: 38%;
         right: 28.75%;
       }
 
-      @include extralargedesktop {
+      @include ultrahd {
         top: 27%;
         right: 24.75%;
       }
 
-      @include extraextralargedesktop {
+      @include retina {
         top: 25%;
         right: 20.75%;
       }

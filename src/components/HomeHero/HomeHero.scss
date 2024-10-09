@@ -16,7 +16,7 @@
     align-items: center;
   }
 
-  @include largetablet {
+  @include laptop {
     flex-direction: row;
     align-items: center;
   }
@@ -26,17 +26,17 @@
     align-items: center;
   }
 
-  @include largedesktop {
+  @include wide {
     flex-direction: row;
     align-items: center;
   }
 
-  @include extralargedesktop {
+  @include ultrahd {
     flex-direction: row;
     align-items: center;
   }
 
-  @include extraextralargedesktop {
+  @include retina {
     flex-direction: row;
     align-items: center;
   }
@@ -46,15 +46,15 @@
     flex-direction: column;
     gap: 0.25rem;
 
-    @include largedesktop {
+    @include wide {
       gap: 0.75rem;
     }
 
-    @include extralargedesktop {
+    @include ultrahd {
       gap: 1rem;
     }
 
-    @include extraextralargedesktop {
+    @include retina {
       gap: 1.25rem;
     }
   }
@@ -72,7 +72,7 @@
     gap: 1.5rem;
     padding: 3rem 3rem;
 
-    @include largemobile {
+    @include phablet {
       flex: 1;
       gap: 1.75rem;
       padding: 3rem 3rem;
@@ -84,7 +84,7 @@
       padding: 4rem 4.5rem;
     }
 
-    @include largetablet {
+    @include laptop {
       flex: 1;
       gap: 1.75rem;
       padding: 4rem 4.25rem;
@@ -97,21 +97,21 @@
       justify-content: center;
     }
 
-    @include largedesktop {
+    @include wide {
       flex: 1;
       gap: 2.5rem;
       padding: 5.5rem 6.5rem;
       justify-content: center;
     }
 
-    @include extralargedesktop {
+    @include ultrahd {
       flex: 1;
       gap: 3rem;
       padding: 6rem 7rem;
       justify-content: center;
     }
 
-    @include extraextralargedesktop {
+    @include retina {
       flex: 1;
       gap: 3.5rem;
       padding: 7rem 7.5rem;
@@ -132,7 +132,7 @@
     object-fit: cover;
     border-radius: 20px;
 
-    @include largemobile {
+    @include phablet {
       width: 95%;
     }
 
@@ -140,7 +140,7 @@
       width: 90%;
     }
 
-    @include largetablet {
+    @include laptop {
       width: 85%;
     }
 
@@ -148,15 +148,15 @@
       width: 80%;
     }
 
-    @include largedesktop {
+    @include wide {
       width: 71%;
     }
 
-    @include extralargedesktop {
+    @include ultrahd {
       width: 68%;
     }
 
-    @include extraextralargedesktop {
+    @include retina {
       width: 65%;
     }
   }

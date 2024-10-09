@@ -4,10 +4,17 @@
 @use "../../styles/partials/typography" as *;
 
 .footer {
+    background-color: $CloudWhite;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.5rem 0;
+
+    &__logo {
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+    }
 
     &__container {
         display: flex;

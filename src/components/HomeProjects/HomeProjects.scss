@@ -14,7 +14,7 @@
     flex-direction: row;
   }
 
-  @include largetablet {
+  @include laptop {
     flex-direction: row;
   }
 
@@ -22,15 +22,15 @@
     flex-direction: row;
   }
 
-  @include largedesktop {
+  @include wide {
     flex-direction: row;
   }
 
-  @include extralargedesktop {
+  @include ultrahd {
     flex-direction: row;
   }
 
-  @include extraextralargedesktop {
+  @include retina {
      flex-direction: row;
   }
 
@@ -43,7 +43,7 @@
       flex: 1;
     }
 
-    @include largetablet {
+    @include laptop {
       flex: 1;
     }
 
@@ -51,15 +51,15 @@
       flex: 1;
     }
 
-    @include largedesktop {
+    @include wide {
       flex: 1;
     }
 
-    @include extralargedesktop {
+    @include ultrahd {
       flex: 1;
     }
 
-    @include extraextralargedesktop {
+    @include retina {
       flex: 1;
     }
   }
@@ -85,7 +85,7 @@
       left: 4.5rem;
     }
 
-    @include largetablet {
+    @include laptop {
       left: 4.25rem;
     }
 
@@ -93,15 +93,15 @@
       left: 6.25rem;
     }
 
-    @include largedesktop {
+    @include wide {
       left: 6.5rem;
     }
 
-    @include extralargedesktop {
+    @include ultrahd {
       left: 6.75rem;
     }
 
-    @include extraextralargedesktop {
+    @include retina {
       left: 7rem;
     }
   }
@@ -110,7 +110,7 @@
     background-color: $CloudWhite;
     padding: 2rem 3rem;
 
-    @include largetablet {
+    @include laptop {
       flex: 1;
       padding: 2rem 3rem;
     }
@@ -120,17 +120,17 @@
       padding: 3rem 5rem;
     }
 
-    @include largedesktop {
+    @include wide {
       flex: 1;
       padding: 3rem 5rem;
     }
 
-    @include extralargedesktop {
+    @include ultrahd {
       flex: 1;
       padding: 4rem 5.5rem;
     }
 
-    @include extraextralargedesktop {
+    @include retina {
       flex: 1;
       padding: 5rem 6rem;
     }

@@ -42,6 +42,14 @@
     @include wide {
       padding: 8rem 4rem;
     }
+
+    @include ultrahd {
+      padding: 9rem 4.5rem;
+    }
+
+    @include retina {
+      padding: 9rem 4.5rem;
+    }
   }
 
   &__subcard {
@@ -69,7 +77,15 @@
     }
 
     @include wide {
-      width: 80%;
+      width: 79%;
+    }
+
+    @include ultrahd {
+      width: 78%;
+    }
+
+    @include retina {
+      width: 78%;
     }
   }
 
@@ -107,6 +123,15 @@
     @include wide {
       padding: 2rem 8rem;
     }
+
+
+    @include ultrahd {
+      padding: 2.25rem 9rem;
+    }
+
+    @include retina {
+      padding: 2.5rem 10rem;
+    }
   }
 
   &__subtitle {
@@ -137,6 +162,14 @@
     }
 
     @include wide {
+      flex-direction: row;
+    }
+
+    @include ultrahd {
+      flex-direction: row;
+    }
+
+    @include retina {
       flex-direction: row;
     }
   }

@@ -23,7 +23,7 @@
     gap: 1.25rem;
     padding: 3rem 1.5rem;
 
-    @include largemobile {
+    @include phablet {
       padding: 4rem 2rem;
     }
 
@@ -31,7 +31,7 @@
       padding: 5rem 2.5rem;
     }
 
-    @include largetablet {
+    @include laptop {
       padding: 6rem 3rem;
     }
 
@@ -39,8 +39,16 @@
       padding: 7rem 3.5rem;
     }
 
-    @include largedesktop {
+    @include wide {
       padding: 8rem 4rem;
+    }
+
+    @include ultrahd {
+      padding: 9rem 4.5rem;
+    }
+
+    @include retina {
+      padding: 9rem 4.5rem;
     }
   }
 
@@ -53,7 +61,7 @@
     justify-content: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
-    @include largemobile {
+    @include phablet {
       width: 76%;
     }
 
@@ -61,7 +69,7 @@
       width: 77%;
     }
 
-    @include largetablet {
+    @include laptop {
       width: 78%;
     }
 
@@ -69,8 +77,16 @@
       width: 79%;
     }
 
-    @include largedesktop {
-      width: 80%;
+    @include wide {
+      width: 79%;
+    }
+
+    @include ultrahd {
+      width: 78%;
+    }
+
+    @include retina {
+      width: 78%;
     }
   }
 
@@ -90,7 +106,7 @@
     gap: 0.5rem;
     padding: 0.75rem 2.5rem;
 
-    @include largemobile {
+    @include phablet {
       padding: 1rem 4rem;
     }
 
@@ -98,7 +114,7 @@
       padding: 1.25rem 5rem;
     }
 
-    @include largetablet {
+    @include laptop {
       padding: 1.5rem 6rem;
     }
 
@@ -106,8 +122,16 @@
       padding: 1.75rem 7rem;
     }
 
-    @include largedesktop {
+    @include wide {
       padding: 2rem 8rem;
+    }
+
+    @include ultrahd {
+      padding: 2.25rem 9rem;
+    }
+
+    @include retina {
+      padding: 2.5rem 10rem;
     }
   }
 
@@ -122,7 +146,7 @@
     align-items: center;
     align-content: center;
 
-    @include largemobile {
+    @include phablet {
       flex-direction: column;
     }
 
@@ -130,7 +154,7 @@
       flex-direction: row;
     }
 
-    @include largetablet {
+    @include laptop {
       flex-direction: row;
     }
 
@@ -138,7 +162,15 @@
       flex-direction: row;
     }
 
-    @include largedesktop {
+    @include wide {
+      flex-direction: row;
+    }
+
+    @include ultrahd {
+      flex-direction: row;
+    }
+
+    @include retina {
       flex-direction: row;
     }
   }
@@ -149,10 +181,5 @@
 
   &__link {
     @include link;
-  }
-
-  &__backicon {
-    width: 100%;
-    height: 2.5rem;
   }
 }

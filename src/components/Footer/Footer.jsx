@@ -1,17 +1,18 @@
 import "./Footer.scss";
 import React from "react";
+import logo from "../../assets/logo/Untitled-3.png";
 
 const Footer = () => {
   return (
     <main className="footer">
       <img
-        src="{import logo}"
+        src={logo}
         alt="Rouene Medina Portfolio"
-        className="footer_logo"
+        className="footer__logo"
       ></img>
       <section className="footer__container">
         <article className="footer__copyright">
-          <p>&copy;2024 Rouene Medina</p>
+          <h5>&copy;2024 Rouene Medina</h5>
         </article>
         <article className="footer__attributes">
           <h5 className="footer__subtitle">
@@ -30,12 +31,13 @@ const Footer = () => {
               href="https://stock.adobe.com/"
               target="_blank"
               rel="noopener noreferrer"
+              className="footer__link"
             >
               Adobe Stock
             </a>
           </h5>
           <h5 className="footer__subtitle">
-            All photos © Rouene Medina [2024]
+            All photos ©Rouene Medina [2024]
           </h5>
         </article>
       </section>
