@@ -132,6 +132,11 @@
       width: 30%;
       padding: 4rem;
     }
+
+    @include retina {
+      width: 30%;
+      padding: 4.25rem;
+    }
   }
 
   &__img {
