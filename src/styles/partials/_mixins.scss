@@ -36,6 +36,12 @@
   }
 }
 
+@mixin extraextralargedesktop {
+  @media (min-width: $extraextralargedesktop-min-width) and (max-width: $extraextralargedesktop-max-width) {
+    @content;
+  }
+}
+
 @mixin selected-state {
   width: 100%;
   max-width: 10.3125rem;
