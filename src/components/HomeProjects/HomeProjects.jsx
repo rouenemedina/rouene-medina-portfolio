@@ -14,13 +14,13 @@ const HomeProjects = () => {
           <article className="projects__subcard">
             <h2>01</h2>
             <Link to="/projectone" className="projects__link">
-              <h2>PhotoNest</h2>
+              <h3>PhotoNest</h3>
             </Link>
           </article>
           <article className="projects__subcard">
             <h2>02</h2>
             <Link to="/projecttwo" className="projects__link">
-              <h2>PhotoNest V2.0</h2>
+              <h3>PhotoNest V2.0</h3>
             </Link>
           </article>
       </section>
