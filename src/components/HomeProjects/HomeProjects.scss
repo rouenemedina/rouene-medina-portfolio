@@ -26,6 +26,14 @@
     flex-direction: row;
   }
 
+  @include extralargedesktop {
+    flex-direction: row;
+  }
+
+  @include extraextralargedesktop {
+     flex-direction: row;
+  }
+
   &__hero {
     color: $FreshCream;
     background-color: $Midnight;
@@ -44,6 +52,14 @@
     }
 
     @include largedesktop {
+      flex: 1;
+    }
+
+    @include extralargedesktop {
+      flex: 1;
+    }
+
+    @include extraextralargedesktop {
       flex: 1;
     }
   }
@@ -80,6 +96,14 @@
     @include largedesktop {
       left: 6.5rem;
     }
+
+    @include extralargedesktop {
+      left: 6.75rem;
+    }
+
+    @include extraextralargedesktop {
+      left: 7rem;
+    }
   }
 
   &__card {
@@ -93,12 +117,22 @@
 
     @include desktop {
       flex: 1;
-      padding: 2rem 5rem;
+      padding: 3rem 5rem;
     }
 
     @include largedesktop {
       flex: 1;
-      padding: 2rem 5rem;
+      padding: 3rem 5rem;
+    }
+
+    @include extralargedesktop {
+      flex: 1;
+      padding: 4rem 5.5rem;
+    }
+
+    @include extraextralargedesktop {
+      flex: 1;
+      padding: 5rem 6rem;
     }
   }
 

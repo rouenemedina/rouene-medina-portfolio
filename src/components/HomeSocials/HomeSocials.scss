@@ -27,12 +27,21 @@
     @include largedesktop {
       padding: 5rem;
     }
+
+    @include extralargedesktop {
+      padding: 5.5rem;
+    }
+
+    @include extraextralargedesktop {
+      padding: 5.75rem;
+    }
   }
 
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1.5rem;
     padding: 0 2.5rem;
 
@@ -67,6 +76,20 @@
       justify-content: space-between;
       padding: 0 6.5rem;
     }
+
+    @include extralargedesktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 6.75rem;
+    }
+
+    @include extraextralargedesktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 7rem;
+    }
   }
 
   &__card {
@@ -76,31 +99,45 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 3rem;
+    padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
+    @include largemobile {
+      width: 50%;
+      padding: 2.75rem;
+    }
+
     @include tablet {
-      width: 45%;
+      width: 40%;
+      padding: 3rem;
     }
 
     @include largetablet {
-      width: 45%;
+      width: 31%;
+      padding: 3.35rem;
     }
 
     @include desktop {
       width: 30%;
+      padding: 3.5rem;
     }
 
     @include largedesktop {
       width: 30%;
+      padding: 3.75rem;
+    }
+
+    @include extralargedesktop {
+      width: 30%;
+      padding: 4rem;
     }
   }
 
   &__img {
     width: 100%;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 1.5rem;
     border: 1px solid $FreshCream;
     filter: grayscale(100%);
     transition: filter 0.5s ease;
@@ -111,7 +148,31 @@
     }
 
     @include largemobile {
+      padding: 1.75rem;
+    }
+
+    @include tablet {
       padding: 2rem;
+    }
+
+    @include largetablet {
+      padding: 2.25rem;
+    }
+
+    @include desktop {
+      padding: 2.5rem;
+    }
+
+    @include largedesktop {
+      padding: 2.75rem;
+    }
+
+    @include extralargedesktop {
+      padding: 3rem;
+    }
+
+    @include extraextralargedesktop {
+      padding: 3.25rem;
     }
   }
 

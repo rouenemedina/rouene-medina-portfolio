@@ -34,6 +34,14 @@
     padding: 6.5rem;
   }
 
+  @include extralargedesktop {
+    padding: 6.75rem;
+  }
+
+  @include extraextralargedesktop {
+    padding: 7rem;
+  }
+
   &__title {
     @include tablet {
       padding: 0 1.5rem;
@@ -65,7 +73,7 @@
       flex-wrap: wrap;
       padding: 3rem;
     }
-  
+
     @include desktop {
       flex-direction: row;
       flex-wrap: wrap;
@@ -76,6 +84,18 @@
       flex-direction: row;
       flex-wrap: wrap;
       padding: 3rem;
+    }
+
+    @include extralargedesktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 4rem;
+    }
+
+    @include extraextralargedesktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 4.5rem;
     }
   }
 
@@ -99,13 +119,21 @@
     @include largetablet {
       width: 47%;
     }
-  
+
     @include desktop {
       width: 40%;
     }
 
     @include largedesktop {
+      width: 35%;
+    }
+
+    @include extralargedesktop {
       width: 30%;
+    }
+
+    @include extraextralargedesktop {
+      width: 28%;
     }
   }
 
@@ -127,7 +155,7 @@
       gap: 0;
     }
 
-    @include tablet {      
+    @include tablet {
       flex-wrap: nowrap;
       gap: 0;
     }
@@ -136,13 +164,23 @@
       flex-wrap: nowrap;
       gap: 0;
     }
-  
+
     @include desktop {
       flex-wrap: nowrap;
       gap: 0;
     }
 
     @include largedesktop {
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+
+    @include extralargedesktop {
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+
+    @include extraextralargedesktop {
       flex-wrap: nowrap;
       gap: 0;
     }

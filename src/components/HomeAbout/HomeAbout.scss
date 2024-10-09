@@ -34,12 +34,28 @@
     padding: 5rem;
   }
 
+  @include extralargedesktop {
+    padding: 6rem;
+  }
+
+  @include extraextralargedesktop {
+    padding: 6rem;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
 
     @include largedesktop {
       padding: 0 6rem;
+    }
+
+    @include extralargedesktop {
+      padding: 0 6.5rem;
+    }
+
+    @include extraextralargedesktop {
+      padding: 0 6.875rem;
     }
   }
 
@@ -96,6 +112,14 @@
     @include largedesktop {
       height: calc(100vh - 6rem - 6rem);
     }
+
+    @include extralargedesktop {
+      height: calc(100vh - 6.25rem - 6.25rem);
+    }
+
+    @include extraextralargedesktop {
+      height: calc(100vh - 6.5rem - 6.5rem);
+    }
   }
 
   &__card {
@@ -137,7 +161,7 @@
     @include desktop {
       // overflow: hidden;
       flex-direction: row;
-      flex: 0 0 79.875rem;
+      flex: 0 0 77.875rem;
       align-items: center;
       gap: 5rem;
     }
@@ -145,7 +169,7 @@
     @include largedesktop {
       // overflow: hidden;
       flex-direction: row;
-      flex: 0 0 94.875rem;
+      flex: 0 0 75.875rem;
       align-items: center;
       gap: 6rem;
     }
@@ -153,7 +177,7 @@
     @include extralargedesktop {
       // overflow: hidden;
       flex-direction: row;
-      flex: 0 0 99.875rem;
+      flex: 0 0 84.875rem;
       align-items: center;
       gap: 6rem;
     }
@@ -161,7 +185,7 @@
     @include extraextralargedesktop {
       // overflow: hidden;
       flex-direction: row;  
-      flex: 0 0 119.875rem;
+      flex: 0 0 95.875rem;
       align-items: center;
       gap: 6rem;
     }
@@ -196,6 +220,10 @@
     }
 
     @include largedesktop {
+      width: 40%;
+    }
+
+    @include extralargedesktop {
       width: 40%;
     }
   }
