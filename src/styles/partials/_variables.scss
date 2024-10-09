@@ -2,33 +2,33 @@
 $mobile-min-width: 375px;
 $mobile-max-width: 480px;
 
-//640px - Large Mobile
-$largemobile-min-width: 481px;
-$largemobile-max-width: 767px;
+//640px - Phablet
+$phablet-min-width: 481px;
+$phablet-max-width: 767px;
 
 //768px - Tablet
 $tablet-min-width: 768px;
 $tablet-max-width: 1023px;
 
-//1024px - Largetablet
-$largetablet-min-width: 1024px;
-$largetablet-max-width: 1279px;
+//1024px - Laptop
+$laptop-min-width: 1024px;
+$laptop-max-width: 1279px;
 
 //1280px - Desktop
 $desktop-min-width: 1280px;
 $desktop-max-width: 1439px;
 
-//1440px - Large Desktop
-$largedesktop-min-width: 1440px;
-$largedesktop-max-width: 1599px;
+//1440px - Wide Screen
+$wide-min-width: 1440px;
+$wide-max-width: 1599px;
 
-//1600px - Extra Large Desktop
-$extralargedesktop-min-width: 1600px;
-$extralargedesktop-max-width: 1919px;
+//1600px - Ultra HD Screen
+$ultrahd-min-width: 1600px;
+$ultrahd-max-width: 1919px;
 
-//1920px - Extra Extra Large Desktop
-$extraextralargedesktop-min-width: 1920px;
-$extraextralargedesktop-max-width: 2559px;
+//1920px - Retina Screen
+$retina-min-width: 1920px;
+$retina-max-width: 2559px;
 
 //colors
 // $White: #ffffff;

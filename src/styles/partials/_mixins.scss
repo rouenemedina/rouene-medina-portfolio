@@ -1,7 +1,7 @@
 @use "../../styles/partials/variables" as *;
 
-@mixin largemobile {
-  @media (min-width: $largemobile-min-width) and (max-width: $largemobile-max-width) {
+@mixin phablet {
+  @media (min-width: $phablet-min-width) and (max-width: $phablet-max-width) {
     @content;
   }
 }
@@ -12,8 +12,8 @@
   }
 }
 
-@mixin largetablet {
-  @media (min-width: $largetablet-min-width) and (max-width: $largetablet-max-width) {
+@mixin laptop {
+  @media (min-width: $laptop-min-width) and (max-width: $laptop-max-width) {
     @content;
   }
 }
@@ -24,20 +24,20 @@
   }
 }
 
-@mixin largedesktop {
-  @media (min-width: $largedesktop-min-width) and (max-width: $largedesktop-max-width) {
+@mixin wide {
+  @media (min-width: $wide-min-width) and (max-width: $wide-max-width) {
     @content;
   }
 }
 
-@mixin extralargedesktop {
-  @media (min-width: $extralargedesktop-min-width) and (max-width: $extralargedesktop-max-width) {
+@mixin ultrahd {
+  @media (min-width: $ultrahd-min-width) and (max-width: $ultrahd-max-width) {
     @content;
   }
 }
 
-@mixin extraextralargedesktop {
-  @media (min-width: $extraextralargedesktop-min-width) and (max-width: $extraextralargedesktop-max-width) {
+@mixin retina {
+  @media (min-width: $retina-min-width) and (max-width: $retina-max-width) {
     @content;
   }
 }
