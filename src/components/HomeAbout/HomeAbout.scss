@@ -185,7 +185,7 @@
     @include extraextralargedesktop {
       // overflow: hidden;
       flex-direction: row;  
-      flex: 0 0 95.875rem;
+      flex: 0 0 104.875rem;
       align-items: center;
       gap: 6rem;
     }
@@ -224,6 +224,10 @@
     }
 
     @include extralargedesktop {
+      width: 40%;
+    }
+
+    @include extraextralargedesktop {
       width: 40%;
     }
   }
