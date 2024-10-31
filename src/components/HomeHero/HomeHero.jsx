@@ -2,19 +2,15 @@ import "./HomeHero.scss";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Profile from "../../assets/images/DSC00804-Edit-4.jpg";
+import getHomeHeroData from "../../utils/getHomeHeroData";
 
-const API_URL = import.meta.env.VITE_API_URL;
-console.log(`API URL: ${API_URL}`);
 const HomeHero = () => {
   const [heroData, setHeroData] = useState([]);
 
   const getHero = async () => {
     try {
-      const response = await axios.get(`${API_URL}/hero`);
-      const result = response.data[0];
-      setHeroData(result);
-      console.log(response);
-      console.log(response.data[0]);
+      const data = await getHomeHeroData();
+      setHeroData(data);
     } catch (err) {
       console.log("Error fetching data", err);
     }
@@ -24,11 +20,7 @@ const HomeHero = () => {
     getHero();
   }, []);
 
-  const result = heroData;
-  const hero_name = result.name;
-  const hero_position = result.position;
-  const hero_location = result.location;
-  const hero_image = result.image;
+  const { hero_name, hero_position, hero_location, hero_image } = heroData;
 
   return (
     <>
