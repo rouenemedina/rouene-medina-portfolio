@@ -1,5 +1,5 @@
 import "./HomeAbout.scss";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import persona1 from "../../assets/images/persona1-1.png";
 import persona2 from "../../assets/images/persona2-2.png";
 import persona3 from "../../assets/images/persona3-3.png";
@@ -7,14 +7,32 @@ import codes from "../../assets/images/codes.png";
 import ui from "../../assets/images/ui.png";
 import media from "../../assets/images/media.png";
 import diploma from "../../assets/images/diploma.png";
+import getHomeAboutData from "../../utils/getHomeAboutData";
 
 const HomeAbout = () => {
+  const [aboutData, setAboutData] = useState([]);
+
+  const getAbout = async () => {
+    try {
+      const data = await getHomeAboutData();
+      setAboutData(data);
+    } catch(err) {
+      console.log("Error fetching data", err);
+    }
+  }
+
+  useEffect (() => {
+    getAbout();
+  }, []);
+
+  const { about_title, about_subtitle } = aboutData;
+
   return (
     <main className="about">
       <section className="about__container">
         <article className="about__title">
-          <h2 className="about__subtitle">We All Have a Story</h2>
-          <h3 className="about__subtitle-secondary">Here's mine</h3>
+          <h2 className="about__subtitle">{ about_title }</h2>
+          <h3 className="about__subtitle-secondary">{ about_subtitle}</h3>
         </article>
         <article className="about__details">
           <div className="about__subdetails">
