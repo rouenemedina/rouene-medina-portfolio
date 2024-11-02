@@ -1,7 +1,7 @@
 import "./HomeProjects.scss";
 import React from "react";
 import { Link } from "react-router-dom";
-import hero from "../../assets/images/DSC00628-2.jpg";
+import hero from "../../assets/images/projects_background.jpg";
 
 const HomeProjects = () => {
   return (

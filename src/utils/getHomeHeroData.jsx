@@ -6,8 +6,6 @@ console.log(`API URL: ${API_URL}`);
 async function getHomeHeroData() {
     try {
         const response = await axios.get(`${API_URL}/hero`);
-        console.log(response);
-        console.log(response.data[0]);
         return response.data[0];
     } catch(err) {
         console.log("Error fetching data", err);

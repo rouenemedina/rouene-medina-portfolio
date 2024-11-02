@@ -1,8 +1,8 @@
 import "./HomeSocials.scss";
 import React from "react";
-import mail from "../../assets/images/mail.jpg";
-import linkedin from "../../assets/images/linkedin.png";
-import github from "../../assets/images/github.jpg";
+import mail from "../../assets/images/socials_mail.jpg";
+import linkedin from "../../assets/images/socials_linkedin.png";
+import github from "../../assets/images/socials_github.jpg";
 
 const HomeSocials = () => {
   return (

@@ -1,12 +1,12 @@
 import "./HomeAbout.scss";
 import React, { useEffect, useState } from "react";
-import persona1 from "../../assets/images/persona1-1.png";
-import persona2 from "../../assets/images/persona2-2.png";
-import persona3 from "../../assets/images/persona3-3.png";
-import codes from "../../assets/images/codes.png";
-import ui from "../../assets/images/ui.png";
-import media from "../../assets/images/media.png";
-import diploma from "../../assets/images/diploma.png";
+import persona1 from "../../assets/images/about_persona1.png";
+import persona2 from "../../assets/images/about_persona2.png";
+import persona3 from "../../assets/images/about_persona3.png";
+import codes from "../../assets/images/about_codes.png";
+import ui from "../../assets/images/about_ui.png";
+import media from "../../assets/images/about_media.png";
+import diploma from "../../assets/images/about_diploma.png";
 import getHomeAboutData from "../../utils/getHomeAboutData";
 
 const HomeAbout = () => {
@@ -25,14 +25,14 @@ const HomeAbout = () => {
     getAbout();
   }, []);
 
-  const { about_title, about_subtitle } = aboutData;
+  const {title, subtitle } = aboutData;
 
   return (
     <main className="about">
       <section className="about__container">
         <article className="about__title">
-          <h2 className="about__subtitle">{ about_title }</h2>
-          <h3 className="about__subtitle-secondary">{ about_subtitle}</h3>
+          <h2 className="about__subtitle">{ title }</h2>
+          <h3 className="about__subtitle-secondary">{ subtitle}</h3>
         </article>
         <article className="about__details">
           <div className="about__subdetails">

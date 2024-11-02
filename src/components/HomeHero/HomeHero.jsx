@@ -1,7 +1,7 @@
 import "./HomeHero.scss";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Profile from "../../assets/images/DSC00804-Edit-4.jpg";
+import Profile from "../../assets/images/hero.jpg";
 import getHomeHeroData from "../../utils/getHomeHeroData";
 
 const HomeHero = () => {

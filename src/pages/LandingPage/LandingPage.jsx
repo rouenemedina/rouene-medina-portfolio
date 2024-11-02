@@ -1,7 +1,7 @@
 import "./LandingPage.scss";
 import React from "react";
 import { Link } from "react-router-dom";
-import background from "../../assets/images/DSC08811-Enhanced-NR.png";
+import background from "../../assets/images/landing.png";
 import underline from "../../assets/icons/adobe-stock/AdobeStock_223404830_1.png";
 import sparkle1 from "../../assets/icons/adobe-stock/AdobeStock_456825189.png";
 import sparkle2 from "../../assets/icons/adobe-stock/AdobeStock_598950659.png";

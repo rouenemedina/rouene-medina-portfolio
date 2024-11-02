@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdClose, MdOutlineMenu } from "react-icons/md";
 import NavBar from "../NavBar/NavBar";
-import logo from "../../assets/logo/Untitled-3.png";
+import logo from "../../assets/logo/logo.png";
 
 const Header = () => {
   const [isClicked, setIsClicked] = useState(false);
