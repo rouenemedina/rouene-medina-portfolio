@@ -1,12 +1,5 @@
 import "./HomeAbout.scss";
 import React, { useEffect, useState } from "react";
-import persona1 from "../../assets/images/about_persona1.png";
-import persona2 from "../../assets/images/about_persona2.png";
-import persona3 from "../../assets/images/about_persona3.png";
-import codes from "../../assets/images/about_codes.png";
-import ui from "../../assets/images/about_ui.png";
-import media from "../../assets/images/about_media.png";
-import diploma from "../../assets/images/about_diploma.png";
 import getHomeAboutData from "../../utils/getHomeAboutData";
 import getHomeAboutContentData from "../../utils/getHomeAboutContentData";
 
