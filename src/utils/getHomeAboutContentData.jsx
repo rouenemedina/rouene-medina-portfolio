@@ -1,10 +1,10 @@
 import axios from "axios";
 
 const API_URL = import.meta.env.VITE_API_URL;
-console.log(`API URL: ${API_URL}`);
-const getHomeAboutData = async () => {
+
+const getHomeAboutContentData = async () => {
     try {
-        const response = await axios.get(`${API_URL}/about`);
+        const response = await axios.get(`${API_URL}/about/content`);
         return response.data.data;
     } catch(err) {
         console.log("Error fetching data", err);
@@ -12,4 +12,4 @@ const getHomeAboutData = async () => {
     }
 };
 
-export default getHomeAboutData;
+export default getHomeAboutContentData;
