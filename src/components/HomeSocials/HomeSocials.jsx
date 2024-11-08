@@ -25,7 +25,7 @@ const HomeSocials = () => {
       <section className="socials__container">
         {socialsData.map((social) => {
           return (
-            <article className="socials__card">
+            <article className="socials__card" key={social.id}>
               <a
                 href={social.link}
                 target="_blank"
