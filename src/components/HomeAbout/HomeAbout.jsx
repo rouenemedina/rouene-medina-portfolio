@@ -25,7 +25,6 @@ const HomeAbout = () => {
   const getAboutContent = async () => {
     try {
       const contentData = await getHomeAboutContentData();
-      console.log(contentData);
       setAboutContentData(contentData);
     } catch(err) {
       console.log("Error fetching data", err);

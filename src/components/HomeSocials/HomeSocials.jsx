@@ -8,7 +8,6 @@ const HomeSocials = () => {
   const getSocials = async () => {
     try {
       const socialsData = await getHomeSocialsData();
-      console.log(socialsData);
       setSocialsData(socialsData);
     } catch (err) {
       console.log("Error fetching data", err);
