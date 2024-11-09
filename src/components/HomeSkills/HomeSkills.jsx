@@ -1,30 +1,33 @@
 import "./HomeSkills.scss";
-import React from "react";
-import html from "../../assets/icons/devicons/html5-original-wordmark.svg";
-import css from "../../assets/icons/devicons/css3-original-wordmark.svg";
-import sass from "../../assets/icons/devicons/sass-original.svg";
-import javascript from "../../assets/icons/devicons/javascript-original.svg";
-import typescript from "../../assets/icons/devicons/typescript-original.svg";
-import reacticon from "../../assets/icons/devicons/react-original.svg";
-import nodeicon from "../../assets/icons/devicons/nodejs-original-wordmark.svg";
-import expressicon from "../../assets/icons/devicons/express-original.svg";
-import knexicon from "../../assets/icons/devicons/knexjs-original-wordmark.svg";
-import mysql from "../../assets/icons/devicons/mysql-original-wordmark.svg";
-import postgresql from "../../assets/icons/devicons/postgresql-original-wordmark.svg";
-import axios from "../../assets/icons/devicons/axios-plain-wordmark.svg";
-import webapi from "../../assets/icons/flaticon-freepik/web-development.png";
-import postman from "../../assets/icons/devicons/postman-original-wordmark.svg";
-import github from "../../assets/icons/devicons/github-original.svg";
-import visual from "../../assets/icons/devicons/vscode-original.svg";
-import figma from "../../assets/icons/devicons/figma-original.svg";
-import adobe from "../../assets/icons/devicons/photoshop-original.svg";
-import jira from "../../assets/icons/devicons/jira-original-wordmark.svg";
-import trello from "../../assets/icons/devicons/trello-original-wordmark.svg";
+import React, { useEffect, useState } from "react";
+import getHomeSkillsData from "../../utils/getHomeSkillsData";
 
 const HomeSkills = () => {
+  const [skillsData, setSkillsData] = useState([]);
+
+  const getSkills = async () => {
+    try {
+      const data = await getHomeSkillsData();
+      setSkillsData(data);
+    } catch (err) {
+      console.log("error fetching data", err);
+    }
+  };
+
+  useEffect(() => {
+    getSkills();
+  }, []);
+
   return (
     <main className="skills">
-      <h2 className="skills__title">My Skills</h2>
+      {skillsData.map((skill) => {
+        return (
+          <article className="skills__card" key={skill.id}>
+            <h4 className="skills__subtitle">{skill.title}</h4>
+          </article>
+        );
+      })}
+      {/* <h2 className="skills__title">My Skills</h2>
       <section className="skills__container">
         <article className="skills__card">
           <h4 className="skills__subtitle">PROGRAMMING LANGUAGES</h4>
@@ -192,7 +195,7 @@ const HomeSkills = () => {
             ></img>
           </div>
         </article>
-      </section>
+      </section> */}
     </main>
   );
 };

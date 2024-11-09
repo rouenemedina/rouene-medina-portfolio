@@ -51,7 +51,7 @@ const HomeProjects = () => {
           return (
             <article className="projects__subcard" key={project.id}>
               <h3>{project.id}</h3>
-              <Link to={`/project${project.id}`} className="projects__link">
+              <Link to={`/project/${project.id}`} className="projects__link">
                 <h3>{project.title}</h3>
               </Link>
             </article>
