@@ -1,13 +1,14 @@
 import "./HomeProjects.scss";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import hero from "../../assets/images/projects_background.jpg";
+import { Link, useParams } from "react-router-dom";
 import getHomeProjectsData from "../../utils/getHomeProjectsData";
-import getHomeProjectById from "../../utils/getHomeProjectById";
+import getHomeProjectsList from "../../utils/getHomeProjectsList";
+
 
 const HomeProjects = () => {
+  const { id } = useParams();
   const [projectsData, setProjectsData] = useState([]);
-  const [projectsContentData, setProjectsContentData] = useState([]);
+  const [projectsList, setProjectsList] = useState([]);
 
   const getProjects = async () => {
     try {
@@ -24,17 +25,18 @@ const HomeProjects = () => {
 
   const { title, imageurl, alttext} = projectsData;
 
-  const getProjectsContent = async () => {
+  const getProjectsList = async () => {
     try {
-      const contentData = await getHomeProjectById();
-      setProjectsContentData(contentData);
+      const contentData = await getHomeProjectsList();
+      console.log(contentData);
+      setProjectsList(contentData);
     } catch (err) {
       console.log("Error fetching data", err);
     }
   };
 
   useEffect(() => {
-    getProjectsContent();
+    getProjectsList();
   }, []);
 
   return (
@@ -44,17 +46,18 @@ const HomeProjects = () => {
         <h2 className="projects__title">{ title }</h2>
       </section>
       <section className="projects__card">
-          {projectsContentData.map((project) => {
-            return (
-              <article className="projects__subcard" key={project.id}>
-                <h3>{project.id}</h3>
-                <Link to={`/project${project.id}`} className="projects__link">
-                  <h3>{project.title}</h3>
-                </Link>
-              </article>
-            );
-          })
-          }
+      {
+        projectsList.map((project) => {
+          return (
+            <article className="projects__subcard" key={project.id}>
+              <h3>{project.id}</h3>
+              <Link to={`/project${project.id}`} className="projects__link">
+                <h3>{project.title}</h3>
+              </Link>
+            </article>
+          );
+        })
+      }
           {/* <article className="projects__subcard">
             <h3>02</h3>
             <Link to="/projecttwo" className="projects__link">

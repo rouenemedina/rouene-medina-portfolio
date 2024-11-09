@@ -3,8 +3,10 @@ import React from "react";
 import Buttons from "../../components/Buttons/Buttons";
 import photonest from "../../assets/images/projects_photonest.png";
 import Header from "../../components/Header/Header";
+import { useParams } from "react-router-dom";
 
 const ProjectPhotoNest = () => {
+
   return (
     <>
       <Header />
