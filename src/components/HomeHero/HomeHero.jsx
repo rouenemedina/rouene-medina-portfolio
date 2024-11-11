@@ -1,4 +1,5 @@
 import "./HomeHero.scss";
+import { cn } from "@/lib/utils/aurora"; 
 import { AuroraBackground } from "../UIAurora/aurora";
 import React, { useEffect, useState } from "react";
 import getHomeHeroData from "@lib/api/getHomeHeroData";
@@ -22,13 +23,15 @@ const HomeHero = () => {
   const { name, position, location, imageurl } = heroData;
 
   return (
-    <AuroraBackground className="hero__background" showRadialGradient={true}>
+    <AuroraBackground className={cn(
+      "relative flex flex-col h-[100vh] items-center justify-center bg-red-500 text-slate-950 transition-bg",  // Test with a solid color
+    )} showRadialGradient={true}>
       <main className="hero">
         <section className="hero__details">
-          <h1 className="hero__name">{name}</h1>
+          <h1 className="hero__name">{ name }</h1>
           <article className="hero__card">
-            <h2 className="hero__subdetails">{position}</h2>
-            <h3 className="hero__subdetails">{location}</h3>
+            <h2 className="hero__subdetails">{ position }</h2>
+            <h3 className="hero__subdetails">{ location }</h3>
           </article>
         </section>
         <section className="hero__profile">

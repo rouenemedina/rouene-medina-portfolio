@@ -22,12 +22,9 @@ const HomeProjects = () => {
     getProjects();
   }, []);
 
-  const { title, imageurl, alttext } = projectsData;
-
   const getProjectsList = async () => {
     try {
       const contentData = await getHomeProjectsList();
-      console.log(contentData);
       setProjectsList(contentData);
     } catch (err) {
       console.log("Error fetching data", err);
@@ -38,17 +35,19 @@ const HomeProjects = () => {
     getProjectsList();
   }, []);
 
+  const { title, imageurl, alttext } = projectsData;
+
   return (
     <main className="projects">
       <section className="projects__hero">
         <img
-          src={imageurl}
-          alt={alttext}
+          src={ imageurl }
+          alt={ alttext }
           className="projects__img"
           loading="lazy"
           draggable="false"
         ></img>
-        <h2 className="projects__title">{title}</h2>
+        <h2 className="projects__title">{ title }</h2>
       </section>
       <section className="projects__card">
         {projectsList.map((project) => {

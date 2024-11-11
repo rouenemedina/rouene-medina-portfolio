@@ -24,21 +24,21 @@ const HomeSocials = () => {
       <section className="socials__container">
         {socialsData.map((social) => {
           return (
-            <article className="socials__card" key={social.id}>
+            <article className="socials__card" key={ social.id }>
               <a
-                href={social.link}
+                href={ social.link }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="socials__link"
               >
                 <img
-                  src={social.imageurl}
-                  alt={social.alttext}
+                  src={ social.imageurl }
+                  alt={ social.alttext }
                   className="socials__img"
                   loading="lazy"
                   draggable="false"
                 ></img>
-                <h3 className="socials__subtitle">{social.title}</h3>
+                <h3 className="socials__subtitle">{ social.title }</h3>
               </a>
             </article>
           );

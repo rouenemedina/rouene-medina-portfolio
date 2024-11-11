@@ -20,8 +20,6 @@ const HomeAbout = () => {
     getAbout();
   }, []);
 
-  const {title, subtitle } = aboutData;
-
   const getAboutContent = async () => {
     try {
       const contentData = await getHomeAboutContentData();
@@ -35,20 +33,22 @@ const HomeAbout = () => {
     getAboutContent();
   }, []);
 
+  const {title, subtitle } = aboutData;
+
   return (
     <main className="about">
       <section className="about__container">
         <article className="about__title">
           <h2 className="about__subtitle">{ title }</h2>
-          <h3 className="about__subtitle-secondary">{ subtitle}</h3>
+          <h3 className="about__subtitle-secondary">{ subtitle }</h3>
         </article>
         <article className="about__details">
           <div className="about__subdetails">
             {aboutContentData.map((content) => (
-              <div className="about__card" key={content.id}>
+              <div className="about__card" key={ content.id }>
                 <p className="about__story">{ content.description }</p>
                 <img
-                  src={content.imageurl}
+                  src={ content.imageurl }
                   alt="content image"
                   className="about__img"
                   loading="lazy"
