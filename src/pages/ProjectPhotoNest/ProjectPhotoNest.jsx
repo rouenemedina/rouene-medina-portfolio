@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Buttons from "../../components/Buttons/Buttons";
 import Header from "../../components/Header/Header";
-import getProjectById from "../../utils/getHomeProjectById";
+import getProjectById from "@lib/api/getHomeProjectById";
 
 const ProjectPhotoNest = () => {
   const [project, setProject] = useState([]);
@@ -32,6 +32,8 @@ const ProjectPhotoNest = () => {
               src={ project.imageurl }
               alt={ project.alttext }
               className="projectPhotoNest__img"
+              loading="lazy"
+              draggable="false"
             ></img>
           </article>
           <article className="projectPhotoNest__details">

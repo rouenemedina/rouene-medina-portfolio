@@ -1,7 +1,7 @@
 import "./HomeAbout.scss";
 import React, { useEffect, useState } from "react";
-import getHomeAboutData from "../../utils/getHomeAboutData";
-import getHomeAboutContentData from "../../utils/getHomeAboutContentData";
+import getHomeAboutData from "@lib/api/getHomeAboutData";
+import getHomeAboutContentData from "@lib/api/getHomeAboutContentData";
 
 const HomeAbout = () => {
   const [aboutData, setAboutData] = useState([]);
@@ -52,6 +52,7 @@ const HomeAbout = () => {
                   alt="content image"
                   className="about__img"
                   loading="lazy"
+                  draggable="false"
                 ></img>
               </div>
             ))}

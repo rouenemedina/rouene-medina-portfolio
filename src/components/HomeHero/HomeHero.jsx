@@ -1,8 +1,7 @@
 import "./HomeHero.scss";
-import axios from "axios";
+import { AuroraBackground } from "../UIAurora/aurora";
 import React, { useEffect, useState } from "react";
-import Profile from "../../assets/images/hero.jpg";
-import getHomeHeroData from "../../utils/getHomeHeroData";
+import getHomeHeroData from "@lib/api/getHomeHeroData";
 
 const HomeHero = () => {
   const [heroData, setHeroData] = useState({});
@@ -23,7 +22,7 @@ const HomeHero = () => {
   const { name, position, location, imageurl } = heroData;
 
   return (
-    <>
+    <AuroraBackground className="hero__background" showRadialGradient={true}>
       <main className="hero">
         <section className="hero__details">
           <h1 className="hero__name">{name}</h1>
@@ -38,10 +37,11 @@ const HomeHero = () => {
             alt="Rouene Medina's photo"
             className="hero__img"
             loading="lazy"
+            draggable="false"
           ></img>
         </section>
       </main>
-    </>
+    </AuroraBackground>
   );
 };
 

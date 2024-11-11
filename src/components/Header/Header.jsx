@@ -2,7 +2,7 @@ import "./Header.scss";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdClose, MdOutlineMenu } from "react-icons/md";
-import NavBar from "../NavBar/NavBar";
+// import NavBar from "../NavBar/NavBar";
 import logo from "../../assets/logo/logo.png";
 
 const Header = () => {

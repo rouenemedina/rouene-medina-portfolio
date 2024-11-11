@@ -1,7 +1,7 @@
 import "./HomeSkills.scss";
 import React, { useEffect, useState } from "react";
-import getHomeSkillsData from "../../utils/getHomeSkillsData";
-import getHomeSkillsContent from "../../utils/getHomeSkillsContent";
+import getHomeSkillsData from "@lib/api/getHomeSkillsData";
+import getHomeSkillsContent from "@lib/api/getHomeSkillsContent";
 
 const HomeSkills = () => {
   const [skillsData, setSkillsData] = useState([]);
@@ -49,6 +49,7 @@ const HomeSkills = () => {
                         alt={content.title}
                         className="skills__icons"
                         loading="lazy"
+                        draggable="false"
                       ></img>
                     </div>
                   );

@@ -2,9 +2,8 @@ import "./ProjectPhotoNestV2.scss";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Buttons from "../../components/Buttons/Buttons";
-import photonest from "../../assets/images/projects_photonest.png";
 import Header from "../../components/Header/Header";
-import getProjectById from "../../utils/getHomeProjectById";
+import getProjectById from "@lib/api/getHomeProjectById";
 
 const ProjectPhotoNestV2 = () => {
   const [project, setProject] = useState([]);
@@ -30,15 +29,17 @@ const ProjectPhotoNestV2 = () => {
         <section className="projectPhotoNestV2__card">
           <article className="projectPhotoNestV2__subcard">
             <img
-              src={project.imageurl}
-              alt={project.alttext}
+              src={ project.imageurl }
+              alt={ project.alttext }
               className="projectPhotoNestV2__img"
+              loading="lazy"
+              draggable="false"
             ></img>
           </article>
           <article className="projectPhotoNestV2__details">
             <h2 className="projectPhotoNestV2__subtitle">{ project.title }</h2>
             <p className="projectPhotoNestV2__description">
-              {project.description}
+              { project.description }
             </p>
           </article>
           <article className="projectPhotoNestV2__buttons">

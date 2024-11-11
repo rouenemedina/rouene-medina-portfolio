@@ -1,6 +1,6 @@
 import "./HomeSocials.scss";
 import React, { useState, useEffect } from "react";
-import getHomeSocialsData from "../../utils/getHomeSocialsData";
+import getHomeSocialsData from "@lib/api/getHomeSocialsData";
 
 const HomeSocials = () => {
   const [socialsData, setSocialsData] = useState([]);
@@ -36,6 +36,7 @@ const HomeSocials = () => {
                   alt={social.alttext}
                   className="socials__img"
                   loading="lazy"
+                  draggable="false"
                 ></img>
                 <h3 className="socials__subtitle">{social.title}</h3>
               </a>
