@@ -74,6 +74,7 @@
 
   &__subdetails {
     height: fit-content;
+    box-sizing: border-box;
     display: flex;
     overflow-x: auto;
     overflow: scroll;
@@ -101,10 +102,12 @@
     }
 
     @include ultrahd {
+      gap: 8rem;
       height: calc(100vh - 6.25rem - 6.25rem);
     }
 
     @include retina {
+      gap: 8rem;
       height: calc(100vh - 6.5rem - 6.5rem);
     }
   }
@@ -122,6 +125,13 @@
     justify-content: flex-start;
     gap: 1.5rem;
     padding: 0 1.5rem;
+
+    background: rgba(220, 210, 200, 0.4); /* Cool-toned, light beige */
+    text-align: center;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(220, 210, 200, 0.3); /* Matching border */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    backdrop-filter: blur(15px);
 
     @include phablet {
       flex-direction: column;
@@ -171,7 +181,7 @@
 
     @include retina {
       // overflow: hidden;
-      flex-direction: row;  
+      flex-direction: row;
       flex: 0 0 104.875rem;
       align-items: center;
       gap: 6rem;

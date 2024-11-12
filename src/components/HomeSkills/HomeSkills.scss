@@ -10,6 +10,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
   padding: 3rem;
   overflow: scroll;
@@ -23,22 +24,42 @@
   }
 
   @include laptop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
     padding: 4.25rem;
   }
 
   @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
     padding: 6rem;
   }
 
   @include wide {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
     padding: 6.5rem;
   }
 
   @include ultrahd {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
     padding: 6.75rem;
   }
 
   @include retina {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
     padding: 7rem;
   }
 
@@ -100,7 +121,7 @@
   }
 
   &__card {
-    width: 74%;
+    width: 88%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -121,19 +142,19 @@
     }
 
     @include desktop {
-      width: 40%;
-    }
-
-    @include wide {
-      width: 35%;
-    }
-
-    @include ultrahd {
       width: 30%;
     }
 
+    @include wide {
+      width: 30%;
+    }
+
+    @include ultrahd {
+      width: 23%;
+    }
+
     @include retina {
-      width: 28%;
+      width: 23%;
     }
   }
 
