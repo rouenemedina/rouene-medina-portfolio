@@ -126,11 +126,11 @@
     gap: 1.5rem;
     padding: 0 1.5rem;
 
-    background: rgba(220, 210, 200, 0.4); /* Cool-toned, light beige */
+    background: rgba(220, 210, 200, 0.4);
     text-align: center;
     border-radius: 1.25rem;
-    border: 1px solid rgba(220, 210, 200, 0.3); /* Matching border */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid rgba(220, 210, 200, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(15px);
 
     @include phablet {
