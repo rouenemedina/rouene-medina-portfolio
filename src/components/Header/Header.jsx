@@ -1,12 +1,26 @@
 import "./Header.scss";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MdClose, MdOutlineMenu } from "react-icons/md";
 import NavBar from "../NavBar/NavBar";
-import logo from "../../assets/logo/Untitled-3.png";
+import getHeaderData from "../../lib/api/getHomePageData";
 
 const Header = () => {
   const [isClicked, setIsClicked] = useState(false);
+  const [headerData, setHeaderData] = useState([]);
+
+  const getHeader = async () => {
+    try {
+      const data = await getHeaderData();
+      setHeaderData(data);
+    } catch (err) {
+      console.log("Error fetching data", err);
+    }
+  };
+
+  useEffect(() => {
+    getHeader();
+  }, []);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
@@ -26,11 +40,11 @@ const Header = () => {
 
   return (
     <nav className="header">
-      <section className="header__title">
+      <section className="header__details">
         <Link to="/home" className="header__link">
           <img
-            src={logo}
-            alt="Rouene Medina Portfolio Logo"
+            src={ headerData.imageurl }
+            alt={ headerData.altText }
             className="header__logo"
           ></img>
         </Link>

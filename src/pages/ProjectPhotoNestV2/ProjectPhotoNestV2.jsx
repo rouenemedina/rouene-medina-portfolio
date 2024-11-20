@@ -1,10 +1,27 @@
 import "./ProjectPhotoNestV2.scss";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Buttons from "../../components/Buttons/Buttons";
-import photonest from "../../assets/images/photonest_media.png";
 import Header from "../../components/Header/Header";
+import getProjectById from "@lib/api/getHomeProjectById";
 
 const ProjectPhotoNestV2 = () => {
+  const [project, setProject] = useState([]);
+  const { id } = useParams();
+
+  const getProjectByIdData = async () => {
+    try {
+      const response = await getProjectById(id);
+      setProject(response);
+    } catch (err) {
+      console.log("Error fetching data", err);
+    }
+  };
+
+  useEffect(() => {
+    getProjectByIdData();
+  }, [id]);
+
   return (
     <>
       <Header />
@@ -12,24 +29,23 @@ const ProjectPhotoNestV2 = () => {
         <section className="projectPhotoNestV2__card">
           <article className="projectPhotoNestV2__subcard">
             <img
-              src={photonest}
-              alt="PhotoNest in DifferentMedia Queries"
+              src={ project.imageurl }
+              alt={ project.alttext }
               className="projectPhotoNestV2__img"
+              loading="lazy"
+              draggable="false"
             ></img>
           </article>
           <article className="projectPhotoNestV2__details">
-            <h2 className="projectPhotoNestV2__subtitle">PhotoNest v2.0</h2>
+            <h2 className="projectPhotoNestV2__subtitle">{ project.title }</h2>
             <p className="projectPhotoNestV2__description">
-              Welcome to the second version of PhotoNest, a responsive
-              application designed for photographers to showcase their work and
-              connect with clients. This version has been entirely rewritten in
-              TypeScript to enhance code reliability and maintainability.
+              { project.description }
             </p>
           </article>
           <article className="projectPhotoNestV2__buttons">
             <Buttons type="button" className="projectPhotoNestV2__btn">
               <a
-                href=""
+                href={ project.demolink }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="projectPhotoNestV2__link"
@@ -39,7 +55,7 @@ const ProjectPhotoNestV2 = () => {
             </Buttons>
             <Buttons type="button" className="projectPhotoNestV2__btn">
               <a
-                href="https://github.com/rouenemedina/rouene-medina-photonest-v2"
+                href={ project.githublink }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="projectPhotoNestV2__link"

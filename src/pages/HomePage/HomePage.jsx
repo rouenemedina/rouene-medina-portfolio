@@ -11,21 +11,21 @@ import HomeSocials from "../../components/HomeSocials/HomeSocials";
 const HomePage = () => {
   return (
     <>
-      <Header />
       <main className="homepage">
-        <section className = "homepage__sections">
+        <section className="homepage__header homepage__sections">
+          <Header />
           <HomeHero />
         </section>
-        <section className = "homepage__sections">
+        <section className="homepage__sections">
           <HomeAbout />
         </section>
-        <section className = "homepage__sections">
+        <section className="homepage__sections">
           <HomeProjects />
         </section>
-        <section className = "homepage__sections">
+        <section className="homepage__sections">
           <HomeSkills />
         </section>
-        <section className = "homepage__sections" id="contact">
+        <section className="homepage__sections" id="contact">
           <HomeSocials />
         </section>
       </main>

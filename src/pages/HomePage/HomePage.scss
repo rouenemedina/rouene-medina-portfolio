@@ -4,20 +4,26 @@
 @use "../../styles/partials/typography" as *;
 
 .homepage {
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    background-image: url("../../assets/");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
+  }
 
-    &__sections {
-        height: 100vh;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        scroll-snap-align: start;
-    }
+  &__sections {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+  }
 }
-
-

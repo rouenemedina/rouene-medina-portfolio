@@ -10,31 +10,11 @@
   background-color: $Charcoal;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  // padding: 1.5rem;
   overflow: scroll;
 
   &__title {
-    padding: 3rem;
-
-    @include phablet {
-      padding: 1.5rem;
-    }
-
-    @include desktop {
-      padding: 5rem;
-    }
-
-    @include wide {
-      padding: 5rem;
-    }
-
-    @include ultrahd {
-      padding: 5.5rem;
-    }
-
-    @include retina {
-      padding: 5.75rem;
-    }
+    @include padding-title;
   }
 
   &__container {
@@ -43,52 +23,42 @@
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    padding: 0 2.5rem;
-
-    @include phablet {
-      padding: 0 2.75rem;
-    }
+    @include padding-container;
 
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;
       gap: 1rem;
-      padding: 0 3rem;
     }
 
     @include laptop {
       flex-direction: row;
       flex-wrap: wrap;
       gap: 1rem;
-      padding: 0 3rem;
     }
 
     @include desktop {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 0 5rem;
     }
 
     @include wide {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 0 6.5rem;
     }
 
     @include ultrahd {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 0 6.75rem;
     }
 
     @include retina {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 0 7rem;
     }
   }
 
