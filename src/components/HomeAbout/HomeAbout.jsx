@@ -1,7 +1,7 @@
 import "./HomeAbout.scss";
 import React, { useEffect, useState } from "react";
-import getHomeAboutData from "@lib/api/getHomeAboutData";
-import getHomeAboutContentData from "@lib/api/getHomeAboutContentData";
+import getHomeAboutData from "../../lib/api/getHomeAboutData";
+import getHomeAboutContentData from "../../lib/api/getHomeAboutContentData";
 
 const HomeAbout = () => {
   const [aboutData, setAboutData] = useState([]);
@@ -11,12 +11,12 @@ const HomeAbout = () => {
     try {
       const data = await getHomeAboutData();
       setAboutData(data);
-    } catch(err) {
+    } catch (err) {
       console.log("Error fetching data", err);
     }
-  }
+  };
 
-  useEffect (() => {
+  useEffect(() => {
     getAbout();
   }, []);
 
@@ -24,31 +24,31 @@ const HomeAbout = () => {
     try {
       const contentData = await getHomeAboutContentData();
       setAboutContentData(contentData);
-    } catch(err) {
+    } catch (err) {
       console.log("Error fetching data", err);
     }
-  }
+  };
 
-  useEffect (() => {
+  useEffect(() => {
     getAboutContent();
   }, []);
 
-  const {title, subtitle } = aboutData;
+  const { title, subtitle } = aboutData;
 
   return (
     <main className="about">
+      <section className="about__title">
+        <h2 className="about__subtitle">{title}</h2>
+        <h3 className="about__subtitle-secondary">{subtitle}</h3>
+      </section>
       <section className="about__container">
-        <article className="about__title">
-          <h2 className="about__subtitle">{ title }</h2>
-          <h3 className="about__subtitle-secondary">{ subtitle }</h3>
-        </article>
         <article className="about__details">
           <div className="about__subdetails">
             {aboutContentData.map((content) => (
-              <div className="about__card" key={ content.id }>
-                <p className="about__story">{ content.description }</p>
+              <div className="about__card" key={content.id}>
+                <p className="about__story">{content.description}</p>
                 <img
-                  src={ content.imageurl }
+                  src={content.imageurl}
                   alt="content image"
                   className="about__img"
                   loading="lazy"

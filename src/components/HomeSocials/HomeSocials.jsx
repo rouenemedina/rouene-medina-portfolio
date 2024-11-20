@@ -1,6 +1,6 @@
 import "./HomeSocials.scss";
 import React, { useState, useEffect } from "react";
-import getHomeSocialsData from "@lib/api/getHomeSocialsData";
+import getHomeSocialsData from "../../lib/api/getHomeSocialsData";
 
 const HomeSocials = () => {
   const [socialsData, setSocialsData] = useState([]);

@@ -8,69 +8,14 @@
   height: 100vh;
   background-color: $Canvas;
   box-sizing: border-box;
+  overflow: scroll;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  padding: 3rem;
-  overflow: scroll;
-
-  @include phablet {
-    padding: 3rem;
-  }
-
-  @include tablet {
-    padding: 4.5rem;
-  }
-
-  @include laptop {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-    padding: 4.25rem;
-  }
-
-  @include desktop {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-    padding: 6rem;
-  }
-
-  @include wide {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-    padding: 6.5rem;
-  }
-
-  @include ultrahd {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-    padding: 6.75rem;
-  }
-
-  @include retina {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-    padding: 7rem;
-  }
+  justify-content: space-around;
 
   &__title {
-    @include tablet {
-      padding: 0 1.5rem;
-    }
-
-    @include desktop {
-      padding: 0 5.25rem;
-    }
+    display: flex;
+    @include padding-title;
   }
 
   &__container {
@@ -79,6 +24,7 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    @include padding-container;
 
     @include phablet {
       flex-direction: column;
@@ -92,31 +38,26 @@
     @include laptop {
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 3rem;
     }
 
     @include desktop {
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 3rem;
     }
 
     @include wide {
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 3rem;
     }
 
     @include ultrahd {
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 4rem;
     }
 
     @include retina {
       flex-direction: row;
       flex-wrap: wrap;
-      padding: 4.5rem;
     }
   }
 

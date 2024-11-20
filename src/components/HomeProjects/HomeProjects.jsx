@@ -1,8 +1,8 @@
 import "./HomeProjects.scss";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import getHomeProjectsData from "@lib/api/getHomeProjectsData";
-import getHomeProjectsList from "@lib/api/getHomeProjectsList";
+import getHomeProjectsData from "../../lib/api/getHomeProjectsData";
+import getHomeProjectsList from "../../lib/api/getHomeProjectsList";
 
 const HomeProjects = () => {
   const { id } = useParams();
@@ -40,32 +40,28 @@ const HomeProjects = () => {
   return (
     <main className="projects">
       <section className="projects__hero">
-        <img
-          src={ imageurl }
-          alt={ alttext }
-          className="projects__img"
-          loading="lazy"
-          draggable="false"
-        ></img>
-        <h2 className="projects__title">{ title }</h2>
-      </section>
-      <section className="projects__card">
-        {projectsList.map((project) => {
-          return (
-            <article className="projects__subcard" key={ project.id }>
-              <h3>{ project.id }</h3>
-              <Link to={`/project/${project.id}`} className="projects__link">
-                <h3>{ project.title }</h3>
-              </Link>
-            </article>
-          );
-        })}
-        {/* <article className="projects__subcard">
-            <h3>02</h3>
-            <Link to="/projecttwo" className="projects__link">
-              <h3>PhotoNest V2.0</h3>
-            </Link>
-          </article> */}
+        <article className="projects__details">
+          <img
+            src={imageurl}
+            alt={alttext}
+            className="projects__img"
+            loading="lazy"
+            draggable="false"
+          ></img>
+          <h2 className="projects__title">{title}</h2>
+        </article>
+        <article className="projects__content">
+          {projectsList.map((project) => {
+            return (
+              <article className="projects__subcontent" key={project.id}>
+                <h3>{project.id}</h3>
+                <Link to={`/project/${project.id}`} className="projects__link">
+                  <h3>{project.title}</h3>
+                </Link>
+              </article>
+            );
+          })}
+        </article>
       </section>
     </main>
   );

@@ -7,61 +7,17 @@
   background-color: $CloudWhite;
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-
-  @include tablet {
-    flex-direction: row;
-  }
-
-  @include laptop {
-    flex-direction: row;
-  }
-
-  @include desktop {
-    flex-direction: row;
-  }
-
-  @include wide {
-    flex-direction: row;
-  }
-
-  @include ultrahd {
-    flex-direction: row;
-  }
-
-  @include retina {
-     flex-direction: row;
-  }
+  @include flex-display;
 
   &__hero {
+    @include flex-display;
+  }
+
+  &__details {
     color: $FreshCream;
     background-color: $Midnight;
     position: relative;
-
-    @include tablet {
-      flex: 1;
-    }
-
-    @include laptop {
-      flex: 1;
-    }
-
-    @include desktop {
-      flex: 1;
-    }
-
-    @include wide {
-      flex: 1;
-    }
-
-    @include ultrahd {
-      flex: 1;
-    }
-
-    @include retina {
-      flex: 1;
-    }
+    @include flex-center;
   }
 
   &__img {
@@ -81,62 +37,71 @@
     transform: translateY(-50%);
     display: flex;
 
+    @include phablet {
+      left: 3rem;
+    }
+
     @include tablet {
+      left: 3.5rem;
+    }
+
+    @include laptop {
+      left: 3.5rem;
+    }
+
+    @include desktop {
+      left: 4rem;
+    }
+
+    @include wide {
+      left: 4rem;
+    }
+
+    @include ultrahd {
       left: 4.5rem;
     }
 
-    @include laptop {
-      left: 4.25rem;
-    }
-
-    @include desktop {
-      left: 6.25rem;
-    }
-
-    @include wide {
-      left: 6.5rem;
-    }
-
-    @include ultrahd {
-      left: 6.75rem;
-    }
-
     @include retina {
-      left: 7rem;
+      left: 5rem;
     }
   }
 
-  &__card {
+  &__content {
     background-color: $CloudWhite;
+    flex-direction: column;
     padding: 2rem 3rem;
+    @include flex-center;
+    
+    @include phablet {
+      padding: 2.5rem 3.5rem;
+    }
+
+    @include tablet {
+      padding: 3rem 4rem;
+    }
 
     @include laptop {
-      flex: 1;
-      padding: 2rem 3rem;
+      padding: 3.5rem 4.5rem;
     }
 
     @include desktop {
-      flex: 1;
-      padding: 3rem 5rem;
+      padding: 4rem 5rem;
     }
 
-    @include wide {
-      flex: 1;
-      padding: 3rem 5rem;
+    @include wide { 
+      padding: 4.5rem 5.5rem;
     }
 
     @include ultrahd {
-      flex: 1;
-      padding: 4rem 5.5rem;
-    }
-
-    @include retina {
-      flex: 1;
       padding: 5rem 6rem;
     }
+
+    @include retina {
+      padding: 5.5rem 6.5rem;
+    }
   }
 
-  &__subcard {
+  &__subcontent {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -145,7 +110,6 @@
   }
 
   &__link {
-    color: $Midnight;
-    text-decoration: none;
+    @include link;
   }
 }

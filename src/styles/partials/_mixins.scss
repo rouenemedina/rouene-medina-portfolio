@@ -53,11 +53,11 @@
 }
 
 @mixin link {
-  color: $Terracota;
+  color: $Midnight;
   text-decoration: none;
 
   &:hover {
-    color: $Oat;
+    color: $Terracota;
     cursor: pointer;
   }
 }
@@ -74,5 +74,134 @@
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+@mixin padding-title {
+  padding: 1.5rem 3rem;
+
+  @include phablet {
+    padding: 1.5rem 3rem;
+  }
+
+  @include tablet {
+    padding: 2rem 3.5rem;
+  }
+
+  @include laptop {
+    padding: 2rem 3.5rem;
+  }
+
+  @include desktop {
+    padding: 2.5rem 4rem;
+  }
+
+  @include wide {
+    padding: 2.5rem 4rem;
+  }
+
+  @include ultrahd {
+    padding: 3rem 4.5rem;
+  }
+
+  @include retina {
+    padding: 3.5rem 5rem;
+  }
+}
+
+@mixin padding-container {
+  padding: 1rem 2.5rem;
+
+  @include phablet {
+    padding: 1.5rem 3rem;
+  }
+
+  @include tablet {
+    padding: 2rem 3.5rem;
+  }
+
+  @include laptop {
+    padding: 2.5rem 4rem;
+  }
+
+  @include desktop {
+    padding: 3rem 4.5rem;
+  }
+
+  @include wide {
+    padding: 3.5rem 5rem;
+  }
+
+  @include ultrahd {
+    padding: 4rem 5.5rem;
+  }
+
+  @include retina {
+    padding: 4.5rem 6rem;
+  }
+}
+
+@mixin flex-display {
+  display: flex;
+  flex-direction: column;
+
+  @include phablet {
+    flex-direction: row;
+  }
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  @include laptop {
+    flex-direction: row;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  @include wide {
+    flex-direction: row;
+  }
+
+  @include ultrahd {
+    flex-direction: row;
+  }
+
+  @include retina {
+     flex-direction: row;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+
+  @include phablet {
+    flex: 1;
+  }
+
+  @include tablet {
+    flex: 1;
+  }
+
+  @include laptop {
+    flex: 1;
+  }
+
+  @include desktop {
+    flex: 1;
+  }
+
+  @include wide {
+    flex: 1;
+  }
+
+  @include ultrahd {
+    flex: 1;
+  }
+
+  @include retina {
+    flex: 1;
   }
 }

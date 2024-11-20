@@ -24,9 +24,7 @@ const Footer = () => {
             >
               devicons
             </a>
-          </h5>
-          <h5 className="footer__subtitle">
-            Icons provided by{" "}
+            {", "}
             <a
               href="https://stock.adobe.com/"
               target="_blank"
@@ -36,6 +34,7 @@ const Footer = () => {
               Adobe Stock
             </a>
           </h5>
+          
           <h5 className="footer__subtitle">
             All photos ©Rouene Medina [2024]
           </h5>

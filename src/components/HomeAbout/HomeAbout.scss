@@ -10,60 +10,20 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1.5rem;
   margin-top: 3rem;
   overflow: none;
-
-  @include phablet {
-    padding: 1.5rem;
-  }
-
-  @include tablet {
-    padding: 3rem;
-  }
-
-  @include laptop {
-    padding: 3rem;
-  }
-
-  @include desktop {
-    padding: 5rem;
-  }
-
-  @include wide {
-    padding: 5rem;
-  }
-
-  @include ultrahd {
-    padding: 6rem;
-  }
-
-  @include retina {
-    padding: 6rem;
-  }
 
   &__container {
     display: flex;
     flex-direction: column;
-
-    @include wide {
-      padding: 0 6rem;
-    }
-
-    @include ultrahd {
-      padding: 0 6.5rem;
-    }
-
-    @include retina {
-      padding: 0 6.875rem;
-    }
+    @include padding-container;
   }
 
   &__title {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 1.5rem 1.5rem;
+    @include padding-title;
   }
 
   &__details {
@@ -80,52 +40,22 @@
     overflow: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-
-    @include phablet {
-      height: fit-content;
-    }
-
-    @include tablet {
-      height: calc(100vh - 5rem - 5rem);
-    }
-
-    @include laptop {
-      height: calc(100vh - 5rem - 5rem);
-    }
-
-    @include desktop {
-      height: calc(100vh - 6rem - 6rem);
-    }
-
-    @include wide {
-      height: calc(100vh - 6rem - 6rem);
-    }
-
-    @include ultrahd {
-      gap: 8rem;
-      height: calc(100vh - 6.25rem - 6.25rem);
-    }
-
-    @include retina {
-      gap: 8rem;
-      height: calc(100vh - 6.5rem - 6.5rem);
-    }
   }
 
   &__card {
-    height: 100vh;
+    min-width: 18.3125rem;
+    height: 42rem;
     box-sizing: border-box;
     overflow: auto;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
-    // flex: 0 0 23.3125rem;
     flex: 1;
-    min-width: 23.3125rem;
     justify-content: center;
     gap: 1.5rem;
     padding: 0 1.5rem;
 
+    //frost glass effect
     background: rgba(220, 210, 200, 0.4);
     text-align: center;
     border-radius: 1.25rem;
@@ -135,54 +65,54 @@
 
     @include phablet {
       flex-direction: column;
-      flex: 0 0 39.875rem;
+      flex: 0 0 33.875rem;
       gap: 2rem;
     }
 
     @include tablet {
-      // overflow: hidden;
+      height: 40rem;
       flex-direction: row;
-      flex: 0 0 47.875rem;
+      flex: 0 0 41rem;
       align-items: center;
       gap: 3rem;
     }
 
     @include laptop {
-      // overflow: hidden;
+      height: 38rem;
       flex-direction: row;
-      flex: 0 0 63.875rem;
+      flex: 0 0 56rem;
       align-items: center;
       gap: 4rem;
     }
 
     @include desktop {
-      // overflow: hidden;
+      height: 36rem;
       flex-direction: row;
-      flex: 0 0 79.875rem;
+      flex: 0 0 71rem;
       align-items: center;
       gap: 5rem;
     }
 
     @include wide {
-      // overflow: hidden;
+      height: 34rem;
       flex-direction: row;
-      flex: 0 0 84.875rem;
+      flex: 0 0 80rem;
       align-items: center;
       gap: 6rem;
     }
 
     @include ultrahd {
-      // overflow: hidden;
+      height: 32rem;
       flex-direction: row;
-      flex: 0 0 84.875rem;
+      flex: 0 0 89rem;
       align-items: center;
       gap: 6rem;
     }
 
     @include retina {
-      // overflow: hidden;
+      height: 30rem;
       flex-direction: row;
-      flex: 0 0 104.875rem;
+      flex: 0 0 108rem;
       align-items: center;
       gap: 6rem;
     }
@@ -195,7 +125,7 @@
 
   &__img {
     box-sizing: border-box;
-    width: 80%;
+    width: 60%;
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -205,27 +135,27 @@
     }
 
     @include tablet {
-      width: 28%;
+      width: 40%;
     }
 
     @include laptop {
-      width: 28%;
+      width: 30%;
     }
 
     @include desktop {
-      width: 30%;
+      width: 29%;
     }
 
     @include wide {
-      width: 30%;
+      width: 28%;
     }
 
     @include ultrahd {
-      width: 35%;
+      width: 27%;
     }
 
     @include retina {
-      width: 35%;
+      width: 26%;
     }
   }
 }

@@ -1,6 +1,6 @@
 import "./HomeHero.scss";
 import React, { useEffect, useState } from "react";
-import getHomeHeroData from "@lib/api/getHomeHeroData";
+import getHomeHeroData from "../../lib/api/getHomeHeroData";
 
 const HomeHero = () => {
   const [heroData, setHeroData] = useState({});
@@ -8,6 +8,7 @@ const HomeHero = () => {
   const getHero = async () => {
     try {
       const data = await getHomeHeroData();
+      console.log(data);
       setHeroData(data);
     } catch (err) {
       console.log("Error fetching data", err);
