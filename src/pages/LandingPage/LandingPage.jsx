@@ -12,6 +12,7 @@ const LandingPage = () => {
   const fetchLandingData = async () => {
     try {
       const data = await getLandingData();
+      console.log(data);
       setLandingData(data);
     } catch (err) {
       console.log("Error fetching data", err);
