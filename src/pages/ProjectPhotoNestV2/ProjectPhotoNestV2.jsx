@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Buttons from "../../components/Buttons/Buttons";
 import Header from "../../components/Header/Header";
-import getProjectById from "@lib/api/getHomeProjectById";
+import getProjectById from "../../lib/api/getHomeProjectById";
 
 const ProjectPhotoNestV2 = () => {
   const [project, setProject] = useState([]);

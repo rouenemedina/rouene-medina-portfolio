@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // import underline from "../../assets/icons/adobe-stock/AdobeStock_223404830_1.png";
 // import sparkle1 from "../../assets/icons/adobe-stock/AdobeStock_456825189.png";
 // import sparkle2 from "../../assets/icons/adobe-stock/AdobeStock_598950659.png";
-import getLandingData from "@lib/api/getLandingData";
+import getLandingData from "../../lib/api/getLandingData";
 
 const LandingPage = () => {
   const [landingData, setLandingData] = useState({});
