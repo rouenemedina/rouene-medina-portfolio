@@ -26,6 +26,7 @@ const LandingPage = () => {
   return (
     <main className="landing">
       <section className="landing__hero">
+      {console.log(landingData)}
         <img
           src={ landingData.imageurl }
           alt={ landingData.alttext }
