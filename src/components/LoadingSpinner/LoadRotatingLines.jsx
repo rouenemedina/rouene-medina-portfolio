@@ -4,6 +4,7 @@ import "./LoadRotatingLines.scss";
 
 const LoadRotatingLines = () => {
   const [loading, setLoading] = useState(false);
+  
   return (
     <div className="loading">
       {loading ? (
