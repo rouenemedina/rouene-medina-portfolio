@@ -8,6 +8,7 @@ import getLandingData from "../../lib/api/getLandingData";
 
 const LandingPage = () => {
   const [landingData, setLandingData] = useState({});
+  const [loading, setLoading] = useState(true);
 
   const fetchLandingData = async () => {
     try {
@@ -17,11 +18,19 @@ const LandingPage = () => {
     } catch (err) {
       console.log("Error fetching data", err);
     }
+
+    setLoading(false);
   }
 
   useEffect(() => {
     fetchLandingData();
   }, []);
+
+  if (loading) {
+    return (
+      <></>
+    );
+  }
 
   return (
     <main className="landing">
