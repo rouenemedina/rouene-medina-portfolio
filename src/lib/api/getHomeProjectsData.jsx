@@ -7,7 +7,7 @@ const getHomeProjectsData = async () => {
     const response = await axios.get(`${API_URL}/projects`);
     return response.data.data[0];
   } catch (err) {
-    console.log("Error fetching data", err);
+    console.log("Error fetching data", err || err.message);
     return null;
   }
 };

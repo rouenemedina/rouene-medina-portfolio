@@ -5,9 +5,10 @@ const API_URL = import.meta.env.VITE_API_URL;
 const getHomeHeroData = async () => {
   try {
     const response = await axios.get(`${API_URL}/hero`);
+    console.log("Response:", response.data.data);
     return response.data.data;
   } catch (err) {
-    console.log("Error fetching data", err);
+    console.log("Error fetching data", err || err.message);
     return null;
   }
 };

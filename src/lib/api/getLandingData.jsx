@@ -6,8 +6,7 @@ const getLandingData = async () => {
   try {
     console.log("API URL:", `${API_URL}/landing`);
     const response = await axios.get(`${API_URL}/landing`);
-    console.log("Response:", response);
-    return response.data.data;
+    return response.data.data[0];
   } catch (err) {
     console.log("Error fetching data", err || err.message);
     return null;

@@ -3,7 +3,7 @@ import { RotatingLines } from "react-loader-spinner";
 import "./LoadRotatingLines.scss";
 
 const LoadRotatingLines = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   
   return (
     <div className="loading">
