@@ -12,6 +12,7 @@ const HomeProjects = () => {
   const getProjects = async () => {
     try {
       const projectsData = await getHomeProjectsData();
+      console.log("Project data:", projectsData);
       setProjectsData(projectsData);
     } catch (err) {
       console.log("Error fetching data", err);
@@ -25,6 +26,7 @@ const HomeProjects = () => {
   const getProjectsList = async () => {
     try {
       const contentData = await getHomeProjectsList();
+      console.log("Project list data:", contentData);
       setProjectsList(contentData);
     } catch (err) {
       console.log("Error fetching data", err);

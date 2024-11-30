@@ -8,7 +8,6 @@ const HomeHero = () => {
   const getHero = async () => {
     try {
       const data = await getHomeHeroData();
-      console.log(data);
       setHeroData(data);
     } catch (err) {
       console.log("Error fetching data", err);

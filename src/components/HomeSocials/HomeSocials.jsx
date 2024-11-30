@@ -38,7 +38,7 @@ const HomeSocials = () => {
                   loading="lazy"
                   draggable="false"
                 ></img>
-                <h3 className="socials__subtitle">{ social.title }</h3>
+                <h3 className="socials__subtitle">{ social.name }</h3>
               </a>
             </article>
           );
