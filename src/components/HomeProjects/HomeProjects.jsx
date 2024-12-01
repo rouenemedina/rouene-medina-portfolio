@@ -37,12 +37,13 @@ const HomeProjects = () => {
     getProjectsList();
   }, []);
 
-  const { title, imageurl, alttext } = projectsData;
+  const { title, imageurl, alttext } = projectsData || {};
 
   return (
     <main className="projects">
       <section className="projects__hero">
         <article className="projects__details">
+          <h2 className="projects__title">{title}</h2>
           <img
             src={imageurl}
             alt={alttext}
@@ -50,7 +51,6 @@ const HomeProjects = () => {
             loading="lazy"
             draggable="false"
           ></img>
-          <h2 className="projects__title">{title}</h2>
         </article>
         <article className="projects__content">
           {projectsList.map((project) => {

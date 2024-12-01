@@ -9,8 +9,8 @@ const HomeAbout = () => {
 
   const getAbout = async () => {
     try {
-      const data = await getHomeAboutData();
-      setAboutData(data);
+      const aboutData = await getHomeAboutData();
+      setAboutData(aboutData);
     } catch (err) {
       console.log("Error fetching data", err);
     }

@@ -10,7 +10,6 @@ const HomeSkills = () => {
   const getSkills = async () => {
     try {
       const data = await getHomeSkillsData();
-      console.log("getHomeSkillsData: ", data);
       setSkillsData(data);
     } catch (err) {
       console.log("error fetching data", err);
@@ -24,7 +23,6 @@ const HomeSkills = () => {
   const getSkillsContent = async () => {
     try {
       const contentData = await getHomeSkillsContent();
-      console.log("getHomeSkillsContent: ", contentData);
       setSkillsContentData(contentData);
     } catch (err) {
       console.log("error fetching data", err);
