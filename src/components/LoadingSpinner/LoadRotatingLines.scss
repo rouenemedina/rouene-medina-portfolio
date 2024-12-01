@@ -3,10 +3,18 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/typography" as *;
 
-.loading-wrapper {
+.loading {
+  height: 100vh;
+  background-color: $Midnight;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-wrapper {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $CloudWhite;
+  }
 }
