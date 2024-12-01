@@ -14,7 +14,7 @@ const LoadRotatingLines = () => {
           width="96"
           color="grey"
           strokeWidth="5"
-          strokeColor="blue" // Customize the color
+          strokeColor="white"
           animationDuration="0.75"
           ariaLabel="rotating-lines-loading"
           wrapperStyle={{}}

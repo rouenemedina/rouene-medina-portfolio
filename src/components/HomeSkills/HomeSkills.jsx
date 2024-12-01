@@ -45,12 +45,12 @@ const HomeSkills = () => {
               <h4 className="skills__subtitle">{skill.title}</h4>
               <div className="skills__subcard">
                 {skillsContentData.map((content) => {
-                  if (content.skill_id === skill.id) {
+                  if (content.skillId === skill.id) {
                     return (
                       <div key={content.id}>
                         <img
                           src={content.imageurl}
-                          alt={content.title}
+                          alt={content.alttext}
                           className="skills__icons"
                           loading="lazy"
                           draggable="false"
@@ -58,6 +58,7 @@ const HomeSkills = () => {
                       </div>
                     );
                   }
+                  return null;
                 })}
               </div>
             </article>

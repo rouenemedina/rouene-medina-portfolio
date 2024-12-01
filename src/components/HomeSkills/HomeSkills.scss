@@ -83,19 +83,19 @@
     }
 
     @include desktop {
-      width: 30%;
+      width: 35%;
     }
 
     @include wide {
-      width: 30%;
+      width: 32%;
     }
 
     @include ultrahd {
-      width: 23%;
+      width: 30%;
     }
 
     @include retina {
-      width: 23%;
+      width: 30%;
     }
   }
 
