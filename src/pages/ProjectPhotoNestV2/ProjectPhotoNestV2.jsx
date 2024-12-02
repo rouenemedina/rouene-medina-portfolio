@@ -45,7 +45,7 @@ const ProjectPhotoNestV2 = () => {
           <article className="projectPhotoNestV2__buttons">
             <Buttons type="button" className="projectPhotoNestV2__btn">
               <a
-                href={ project.demolink }
+                href={ project.demo }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="projectPhotoNestV2__link"
@@ -55,7 +55,7 @@ const ProjectPhotoNestV2 = () => {
             </Buttons>
             <Buttons type="button" className="projectPhotoNestV2__btn">
               <a
-                href={ project.githublink }
+                href={ project.github }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="projectPhotoNestV2__link"

@@ -1,14 +1,14 @@
-import "./ProjectPhotoNest.scss";
+import "./ProjectPage.scss";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../../components/Header/Header";
-import getProjectById from "../../lib/api/getHomeProjectById";
 import LoadRotatingLines from "../../components/LoadingSpinner/LoadRotatingLines";
+import getProjectById from "../../lib/api/getHomeProjectById";
 import ProjectContentCard from "../../components/ProjectContentCard/ProjectContentCard";
 
-const ProjectPhotoNest = () => {
-  const [project, setProject] = useState([]);
+const ProjectPage = () => {
   const { id } = useParams();
+  const [project, setProject] = useState([]);
 
   const getProjectByIdData = async () => {
     try {
@@ -28,7 +28,7 @@ const ProjectPhotoNest = () => {
     return (
       <>
         <Header />
-        <main className="projectPhotoNest">
+        <main className="projectPage__loading">
           <LoadRotatingLines />
         </main>
       </>
@@ -38,11 +38,17 @@ const ProjectPhotoNest = () => {
   return (
     <>
       <Header />
-      <main className="projectPhotoNest">
-        <ProjectContentCard project={project} projectId={id}/>
+      <main className="projectPage">
+        {Array.isArray(project.content) ? (
+          project.content.map((content, index) => (
+            <ProjectContentCard key={index} project={content} />
+          ))
+        ) : (
+          <ProjectContentCard project={project} />
+        )}
       </main>
     </>
   );
 };
 
-export default ProjectPhotoNest;
+export default ProjectPage;

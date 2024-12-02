@@ -1,11 +1,10 @@
 import "./HomeProjects.scss";
 import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import getHomeProjectsData from "../../lib/api/getHomeProjectsData";
 import getHomeProjectsList from "../../lib/api/getHomeProjectsList";
 
 const HomeProjects = () => {
-  const { id } = useParams();
   const [projectsData, setProjectsData] = useState([]);
   const [projectsList, setProjectsList] = useState([]);
 
@@ -25,7 +24,6 @@ const HomeProjects = () => {
   const getProjectsList = async () => {
     try {
       const listData = await getHomeProjectsList();
-      console.log("Project list data:", listData);
       setProjectsList(listData);
     } catch (err) {
       console.log("Error fetching data", err);

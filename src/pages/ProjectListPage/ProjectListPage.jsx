@@ -1,17 +1,15 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import ProjectPhotoNest from '../ProjectPhotoNest/ProjectPhotoNest';
-import ProjectPhotoNestV2 from '../ProjectPhotoNestV2/ProjectPhotoNestV2';
+import React from "react";
+import { useParams } from "react-router-dom";
+import ProjectPage from "../ProjectPage/ProjectPage";
 
 const ProjectListPage = () => {
-    const { id } = useParams();
+  const { id } = useParams();
 
-    return (
-        <main>
-            { id === "1" && <ProjectPhotoNest projectId={ id }/>}
-            { id === "2" && <ProjectPhotoNestV2 projectId={ id }/>}
-        </main>
-    );
+  return (
+    <main>
+      <ProjectPage projectId={id} />
+    </main>
+  );
 };
 
 export default ProjectListPage;
