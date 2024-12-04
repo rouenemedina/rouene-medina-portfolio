@@ -8,7 +8,7 @@ import ProjectContentCard from "../../components/ProjectContentCard/ProjectConte
 
 const ProjectPage = () => {
   const { id } = useParams();
-  const [projects, setProjects] = useState([]);
+  const [projectContent, setProjectContent] = useState([]);
   const [loading, setLoading] = useState(true);
 
   // Get Project by ID
@@ -16,7 +16,7 @@ const ProjectPage = () => {
     try {
       const response = await getProjectById(id);
       console.log("projectPage get by Id response:", response);
-      setProjects(response);
+      setProjectContent(response.content);
       setLoading(false);
     } catch (err) {
       console.log("Error fetching data", err);
@@ -40,8 +40,11 @@ const ProjectPage = () => {
 
   // Find the project with matching ID
   const projectId = parseInt(id, 10);
-  const projectById = projects.find((project) => project.id === projectId);
+  const projectById = projectContent.find((project) => project.id === projectId);
+  console.log("projectId:", projectId);
+  console.log("projectById:", projectById);
 
+  // Check if project with matching ID was found
   if (!projectById) {
     return (
       <>
@@ -58,8 +61,8 @@ const ProjectPage = () => {
       <Header />
       <main className="projectPage">
         {Array.isArray(projectById.content) ? (
-          projectById.content.map((projectItem, index) => (
-            <ProjectContentCard key={index} project={projectItem} />
+          projectById.content.map((projectItem, id) => (
+            <ProjectContentCard key={id} project={projectItem} />
           ))
         ) : (
           <p>No content available for this project.</p>
